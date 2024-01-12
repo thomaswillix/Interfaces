@@ -16,5 +16,50 @@ namespace Practica1.Vistas
         {
             InitializeComponent();
         }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ape2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void c_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void correo_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ape1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void direccion_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
