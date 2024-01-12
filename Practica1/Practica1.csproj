@@ -85,17 +85,23 @@
     <Compile Include="Vistas\FrmEmpleados.Designer.cs">
       <DependentUpon>FrmEmpleados.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\nuevo-empleado.cs">
+    <Compile Include="Vistas\FrmNuevoCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\nuevo-empleado.Designer.cs">
-      <DependentUpon>nuevo-empleado.cs</DependentUpon>
+    <Compile Include="Vistas\FrmNuevoCliente.Designer.cs">
+      <DependentUpon>FrmNuevoCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\nuevo-proyecto.cs">
+    <Compile Include="Vistas\FrmNuevoEmpleado.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\nuevo-proyecto.Designer.cs">
-      <DependentUpon>nuevo-proyecto.cs</DependentUpon>
+    <Compile Include="Vistas\FrmNuevoEmpleado.Designer.cs">
+      <DependentUpon>FrmNuevoEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\FrmNuevoProyecto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\FrmNuevoProyecto.Designer.cs">
+      <DependentUpon>FrmNuevoProyecto.cs</DependentUpon>
     </Compile>
     <Compile Include="Modelo\Proyecto.cs" />
     <Compile Include="Vistas\FrmProyectos.cs">
@@ -110,11 +116,11 @@
     <Compile Include="Vistas\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\nuevo-usuario.cs">
+    <Compile Include="Vistas\FrmNuevoUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\nuevo-usuario.Designer.cs">
-      <DependentUpon>nuevo-usuario.cs</DependentUpon>
+    <Compile Include="Vistas\FrmNuevoUsuario.Designer.cs">
+      <DependentUpon>FrmNuevoUsuario.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\Principal.cs">
       <SubType>Form</SubType>
@@ -128,20 +134,23 @@
     <EmbeddedResource Include="Vistas\FrmEmpleados.resx">
       <DependentUpon>FrmEmpleados.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\FrmNuevoCliente.resx">
+      <DependentUpon>FrmNuevoCliente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vistas\FrmProyectos.resx">
       <DependentUpon>FrmProyectos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\nuevo-empleado.resx">
-      <DependentUpon>nuevo-empleado.cs</DependentUpon>
+    <EmbeddedResource Include="Vistas\FrmNuevoEmpleado.resx">
+      <DependentUpon>FrmNuevoEmpleado.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\nuevo-proyecto.resx">
-      <DependentUpon>nuevo-proyecto.cs</DependentUpon>
+    <EmbeddedResource Include="Vistas\FrmNuevoProyecto.resx">
+      <DependentUpon>FrmNuevoProyecto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\nuevo-usuario.resx">
-      <DependentUpon>nuevo-usuario.cs</DependentUpon>
+    <EmbeddedResource Include="Vistas\FrmNuevoUsuario.resx">
+      <DependentUpon>FrmNuevoUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>
