@@ -20,8 +20,4 @@
     <User>javier</User>
     <Pass>2222</Pass>
   </Usuario>
-  <Usuario>
-    <User>pablo</User>
-    <Pass>grande</Pass>
-  </Usuario>
 </ArrayOfUsuario>

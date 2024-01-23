@@ -57,7 +57,6 @@
             this.madiano = new System.Windows.Forms.RadioButton();
             this.peque = new System.Windows.Forms.RadioButton();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.logo = new System.Windows.Forms.Label();
@@ -67,6 +66,7 @@
             this.aceptar = new System.Windows.Forms.Button();
             this.cancelar = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -375,7 +375,7 @@
             // 
             // tabPage3
             // 
-            this.tabPage3.Controls.Add(this.maskedTextBox1);
+            this.tabPage3.Controls.Add(this.textBox1);
             this.tabPage3.Controls.Add(this.button1);
             this.tabPage3.Controls.Add(this.pictureBox1);
             this.tabPage3.Controls.Add(this.logo);
@@ -387,14 +387,6 @@
             this.tabPage3.Text = "Logo";
             this.tabPage3.UseVisualStyleBackColor = true;
             this.tabPage3.Click += new System.EventHandler(this.tabPage3_Click);
-            // 
-            // maskedTextBox1
-            // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(130, 34);
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(226, 20);
-            this.maskedTextBox1.TabIndex = 3;
-            this.maskedTextBox1.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox1_MaskInputRejected);
             // 
             // button1
             // 
@@ -457,6 +449,7 @@
             this.aceptar.TabIndex = 69;
             this.aceptar.Text = "Aceptar";
             this.aceptar.UseVisualStyleBackColor = true;
+            this.aceptar.Click += new System.EventHandler(this.aceptar_Click);
             // 
             // cancelar
             // 
@@ -470,6 +463,14 @@
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(130, 35);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(220, 20);
+            this.textBox1.TabIndex = 3;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // FrmNuevoCliente
             // 
@@ -535,9 +536,9 @@
         private System.Windows.Forms.Label logo;
         private System.Windows.Forms.MonthCalendar monthCalendar1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.TextBox textBox1;
+        internal System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }
