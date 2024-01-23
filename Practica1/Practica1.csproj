@@ -77,6 +77,7 @@
     <Compile Include="manejadores\ControladorEmpleadosJSON.cs" />
     <Compile Include="manejadores\ControladorProyectosBin.cs" />
     <Compile Include="manejadores\ControladorUsuariosXML.cs" />
+    <Compile Include="Modelo\Cliente.cs" />
     <Compile Include="Modelo\Empleado.cs" />
     <Compile Include="Modelo\ValidacionEmail.cs" />
     <Compile Include="Vistas\FrmEmpleados.cs">

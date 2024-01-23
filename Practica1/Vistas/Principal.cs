@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Practica1.Vistas;
 
 namespace Practica1
 {
@@ -43,7 +44,7 @@ namespace Practica1
 
         private void altaToolStripMenuItem2_Click(object sender, EventArgs e)
         {
-            nuevo_proyecto proy = new nuevo_proyecto();
+            FrmNuevoProyecto proy = new FrmNuevoProyecto();
             proy.ShowDialog();
         }
 
@@ -55,13 +56,19 @@ namespace Practica1
 
         private void altaToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            nuevo_empleado empl = new nuevo_empleado();
+            FrmNuevoEmpleado empl = new FrmNuevoEmpleado();
             empl.ShowDialog();
         }
 
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void altaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmNuevoCliente nuevoCliente = new FrmNuevoCliente();
+            nuevoCliente.ShowDialog();
         }
     }
 

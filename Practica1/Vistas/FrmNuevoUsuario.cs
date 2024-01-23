@@ -11,9 +11,9 @@ using Practica1.manejadores;
 
 namespace Practica1.Vistas
 {
-    public partial class nuevo_usuario : Form
+    public partial class FrmNuevoUsuario : Form
     {
-        public nuevo_usuario()
+        public FrmNuevoUsuario()
         {
             InitializeComponent();
         }

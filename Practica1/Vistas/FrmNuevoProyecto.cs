@@ -11,10 +11,10 @@ using Practica1.manejadores;
 
 namespace Practica1
 {
-    public partial class nuevo_proyecto : Form
+    public partial class FrmNuevoProyecto : Form
     {
         ToolTip tp = new ToolTip();
-        public nuevo_proyecto()
+        public FrmNuevoProyecto()
         {
             InitializeComponent();
         }

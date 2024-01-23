@@ -120,7 +120,7 @@ namespace Practica1
 
         private void btReg_Click(object sender, EventArgs e)
         {
-            nuevo_usuario nuevoUsu = new nuevo_usuario();
+            FrmNuevoUsuario nuevoUsu = new FrmNuevoUsuario();
             this.Hide();
             nuevoUsu.ShowDialog();
             this.Show();

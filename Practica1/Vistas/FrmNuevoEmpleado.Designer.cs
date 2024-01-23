@@ -1,6 +1,6 @@
 ﻿namespace Practica1
 {
-    partial class nuevo_empleado
+    partial class FrmNuevoEmpleado
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(nuevo_empleado));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmNuevoEmpleado));
             this.b1 = new System.Windows.Forms.Button();
             this.cod = new System.Windows.Forms.NumericUpDown();
             this.fechaNac = new System.Windows.Forms.DateTimePicker();

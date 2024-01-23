@@ -12,9 +12,9 @@ using Practica1.manejadores;
 
 namespace Practica1
 {
-    public partial class nuevo_empleado : Form
+    public partial class FrmNuevoEmpleado : Form
     {
-        public nuevo_empleado()
+        public FrmNuevoEmpleado()
         {
             InitializeComponent();
         }

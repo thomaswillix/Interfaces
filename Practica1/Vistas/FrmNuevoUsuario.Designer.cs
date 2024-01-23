@@ -1,6 +1,6 @@
 ﻿namespace Practica1.Vistas
 {
-    partial class nuevo_usuario
+    partial class FrmNuevoUsuario
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(nuevo_usuario));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmNuevoUsuario));
             this.b1 = new System.Windows.Forms.Button();
             this.user = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
