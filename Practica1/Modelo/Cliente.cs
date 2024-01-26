@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,6 +11,7 @@ namespace Practica1.Modelo
     public class Cliente
     {
         private string dni;
+        private string nombre;
         private string direccion;
         private string ciudad;
         private Empleado representante;
@@ -19,7 +21,7 @@ namespace Practica1.Modelo
         private string pais;
         private int descuento;
         private string comentarios;
-        private string logo;
+        private Image logo;
         private DateTime cita;
         private string tipoCli;
         /*private enum TipoCliente
@@ -29,11 +31,12 @@ namespace Practica1.Modelo
             Grande,
             Multinacional
         }*/
-        public Cliente(string dni, string direccion, string ciudad, Empleado representante, 
-            string correo, int cif, int telefono, string pais, int descuento, string comentarios, 
-            string logo, DateTime cita, string tipoCli)
+        public Cliente(string dni,string nombre, string direccion, string ciudad, Empleado representante, 
+            string correo, int cif, int telefono, string pais, string tipoCli, int descuento, string comentarios, 
+            Image logo, DateTime cita)
         {
             this.Dni = dni;
+            this.Nombre = nombre;
             this.Direccion = direccion;
             this.Ciudad = ciudad;
             this.Representante = representante;
@@ -58,8 +61,9 @@ namespace Practica1.Modelo
         public string Pais { get => pais; set => pais = value; }
         public int Descuento { get => descuento; set => descuento = value; }
         public string Comentarios { get => comentarios; set => comentarios = value; }
-        public string Logo { get => logo; set => logo = value; }
+        public Image Logo { get => logo; set => logo = value; }
         public DateTime Cita { get => cita; set => cita = value; }
         public string TipoCli { get => tipoCli; set => tipoCli = value; }
+        public string Nombre { get => nombre; set => nombre = value; }
     }
 }

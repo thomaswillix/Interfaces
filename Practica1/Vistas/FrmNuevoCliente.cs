@@ -13,6 +13,7 @@ namespace Practica1.Vistas
 {
     public partial class FrmNuevoCliente : Form
     {
+        private int i = 1;
 
         public FrmNuevoCliente()
         {
@@ -20,7 +21,22 @@ namespace Practica1.Vistas
             openFileDialog1.Title = "Change logo image";
             openFileDialog1.Filter = "Image files (*.jpg, *.jpeg, *.jpe, *.jfif, *.png) | *.jpg; *.jpeg; *.jpe; *.jfif; *.png";
         }
-
+        // Computes a week one month from today.
+        private void ShowAWeeksVacationOneMonthFromToday()
+        {
+            DateTime today = this.monthCalendar1.TodayDate;
+            DateTime vacationStart = today.AddMonths(1);
+            DateTime vacationEnd = vacationStart.AddDays(7);
+            // Select the week using SelectionStart and SelectionEnd.
+            this.monthCalendar1.SelectionStart =
+            vacationStart.AddDays(-1);
+            this.monthCalendar1.SelectionEnd = vacationEnd.AddDays(-1);
+        }
+        private void AddBoledDate()
+        {
+            DateTime d = new DateTime(2024, 2, 12);
+            this.monthCalendar1.AddMonthlyBoldedDate(d);
+        }
         private void tabPage1_Click(object sender, EventArgs e)
         {
 
@@ -83,7 +99,7 @@ namespace Practica1.Vistas
 
         private void FrmNuevoCliente_Load(object sender, EventArgs e)
         {
-
+            ShowAWeeksVacationOneMonthFromToday();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -99,12 +115,29 @@ namespace Practica1.Vistas
 
         private void aceptar_Click(object sender, EventArgs e)
         {
+            validar();
 
+            if (1 <= 4)
+            {
+                tabControl1.SelectedTab = tabPage2;
+                string id = "tabPage";
+                string numVal = i.ToString();
+                // tabControl1.SelectedTab = id + numVal;
+            }
+        }
+
+        private void validar()
+        {
+            if()
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            pictureBox1.ImageLocation =  textBox1.Text ;
+            pictureBox1.ImageLocation = textBox1.Text;
+        }
+
+        private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
+        {
 
         }
     }

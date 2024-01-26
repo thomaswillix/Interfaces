@@ -430,9 +430,15 @@
             // 
             // monthCalendar1
             // 
+            this.monthCalendar1.BoldedDates = new System.DateTime[] {
+        new System.DateTime(2024, 1, 26, 13, 37, 47, 0)};
             this.monthCalendar1.Location = new System.Drawing.Point(201, 86);
+            this.monthCalendar1.MinDate = new System.DateTime(2024, 1, 26, 0, 0, 0, 0);
+            this.monthCalendar1.MonthlyBoldedDates = new System.DateTime[] {
+        new System.DateTime(2024, 2, 13, 0, 0, 0, 0)};
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 1;
+            this.monthCalendar1.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar1_DateChanged);
             // 
             // dateTimePicker1
             // 
