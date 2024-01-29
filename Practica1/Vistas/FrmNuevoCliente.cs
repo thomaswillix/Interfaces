@@ -117,7 +117,7 @@ namespace Practica1.Vistas
         {
             validar();
 
-            if (1 <= 4)
+            if (tabControl1.SelectNextControl(tabControl1))
             {
                 tabControl1.SelectedTab = tabPage2;
                 string id = "tabPage";
