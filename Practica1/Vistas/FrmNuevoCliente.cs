@@ -117,9 +117,11 @@ namespace Practica1.Vistas
         {
             validar();
 
-            if (tabControl1.SelectNextControl(tabControl1))
+            switch (tabControl1.SelectedTab)
             {
-                tabControl1.SelectedTab = tabPage2;
+                case tabPage1:
+                    tabControl1.SelectedTab = tabPage2;
+                    break;
                 string id = "tabPage";
                 string numVal = i.ToString();
                 // tabControl1.SelectedTab = id + numVal;
