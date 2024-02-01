@@ -349,6 +349,7 @@
             this.Controls.Add(this.label122);
             this.Name = "FrmNuevoEmpleado";
             this.Text = "nuevo_empleado";
+            this.Load += new System.EventHandler(this.FrmNuevoEmpleado_Load);
             ((System.ComponentModel.ISupportInitialize)(this.cod)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tlf)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numSS)).EndInit();

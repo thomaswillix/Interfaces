@@ -36,17 +36,17 @@ namespace Practica1
                 errores.Add("El DNI no es válido.");
             }
 
-            if (!Validator.validateString(nom))
+            if (!Validator.validateTextBox(nom))
             {
                 errores.Add("El nombre no es válido.");
             }
 
-            if (!Validator.validateString(ape1))
+            if (!Validator.validateTextBox(ape1))
             {
                 errores.Add("El primer apellido no es válido.");
             }
 
-            if (!Validator.validateString(ape2))
+            if (!Validator.validateTextBox(ape2))
             {
                 errores.Add("El segundo apellido no es válido.");
             }
@@ -61,7 +61,7 @@ namespace Practica1
                 errores.Add("El número de teléfono no es válido.");
             }
 
-            if (!Validator.validateString(come))
+            if (!Validator.validateTextBox(come))
             {
                 errores.Add("El campo de comentarios no es válido.");
             }
@@ -123,6 +123,11 @@ namespace Practica1
         private void esc_Click(object sender, EventArgs e)
         {
             wb.Visible = false;
+        }
+
+        private void FrmNuevoEmpleado_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

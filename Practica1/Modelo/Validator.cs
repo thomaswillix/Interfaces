@@ -45,7 +45,37 @@ namespace Practica1.manejadores
             return true;
         }
 
-        public static bool validateString(TextBox str)
+        public static bool validateTextBox(TextBox str)
+        {
+            if (String.IsNullOrEmpty(str.Text))
+            {
+                str.BackColor = Color.Red;
+                return false;
+            }
+            str.BackColor = Color.White;
+            return true;
+        }
+        public static bool validateMaskedTextBox(MaskedTextBox str)
+        {
+            if (String.IsNullOrEmpty(str.Text))
+            {
+                str.BackColor = Color.Red;
+                return false;
+            }
+            str.BackColor = Color.White;
+            return true;
+        }
+        public static bool validateRichTextBox(RichTextBox str)
+        {
+            if (String.IsNullOrEmpty(str.Text))
+            {
+                str.BackColor = Color.Red;
+                return false;
+            }
+            str.BackColor = Color.White;
+            return true;
+        }
+        public static bool validateComboBox(ComboBox str)
         {
             if (String.IsNullOrEmpty(str.Text))
             {
@@ -127,13 +157,15 @@ namespace Practica1.manejadores
             }
             catch (FormatException)
             {
+                email.BackColor = Color.Red;
                 return false;
             }
             catch (ArgumentException)
             {
+                email.BackColor = Color.Red;
                 return false;
             }
-
+            email.BackColor = Color.White;
             return true;
         }
     }

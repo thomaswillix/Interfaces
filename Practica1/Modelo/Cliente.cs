@@ -16,10 +16,10 @@ namespace Practica1.Modelo
         private string ciudad;
         private Empleado representante;
         private string correo;
-        private int cif;
-        private int telefono;
+        private string cif;
+        private string telefono;
         private string pais;
-        private int descuento;
+        private decimal descuento;
         private string comentarios;
         private Image logo;
         private DateTime cita;
@@ -32,7 +32,7 @@ namespace Practica1.Modelo
             Multinacional
         }*/
         public Cliente(string dni,string nombre, string direccion, string ciudad, Empleado representante, 
-            string correo, int cif, int telefono, string pais, string tipoCli, int descuento, string comentarios, 
+            string correo, string cif, string telefono, string pais, string tipoCli, decimal descuento, string comentarios, 
             Image logo, DateTime cita)
         {
             this.Dni = dni;
@@ -56,10 +56,10 @@ namespace Practica1.Modelo
         public string Ciudad { get => ciudad; set => ciudad = value; }
         public Empleado Representante { get => representante; set => representante = value; }
         public string Correo { get => correo; set => correo = value; }
-        public int Cif { get => cif; set => cif = value; }
-        public int Telefono { get => telefono; set => telefono = value; }
+        public string Cif { get => cif; set => cif = value; }
+        public string Telefono { get => telefono; set => telefono = value; }
         public string Pais { get => pais; set => pais = value; }
-        public int Descuento { get => descuento; set => descuento = value; }
+        public decimal Descuento { get => descuento; set => descuento = value; }
         public string Comentarios { get => comentarios; set => comentarios = value; }
         public Image Logo { get => logo; set => logo = value; }
         public DateTime Cita { get => cita; set => cita = value; }

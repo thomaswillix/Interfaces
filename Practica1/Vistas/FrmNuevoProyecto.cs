@@ -34,7 +34,7 @@ namespace Practica1
             List<string> errores = new List<string>();
 
             // Realiza todas las validaciones y recopila los mensajes de error
-            if (!Validator.validateString(desc))
+            if (!Validator.validateTextBox(desc))
             {
                 errores.Add("La descripción está vacía.");
             }

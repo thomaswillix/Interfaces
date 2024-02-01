@@ -42,21 +42,22 @@
             this.c = new System.Windows.Forms.Label();
             this.nomRepre = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.ape1 = new System.Windows.Forms.TextBox();
-            this.ciudad = new System.Windows.Forms.Label();
+            this.ciudad = new System.Windows.Forms.TextBox();
+            this.labelmpasds = new System.Windows.Forms.Label();
             this.direccion = new System.Windows.Forms.TextBox();
             this.di = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.coments = new System.Windows.Forms.RichTextBox();
             this.descuento = new System.Windows.Forms.NumericUpDown();
-            this.coments = new System.Windows.Forms.Label();
+            this.textlabes = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.cliente = new System.Windows.Forms.GroupBox();
             this.multinac = new System.Windows.Forms.RadioButton();
             this.grande = new System.Windows.Forms.RadioButton();
-            this.madiano = new System.Windows.Forms.RadioButton();
+            this.mediano = new System.Windows.Forms.RadioButton();
             this.peque = new System.Windows.Forms.RadioButton();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.logo = new System.Windows.Forms.Label();
@@ -66,7 +67,6 @@
             this.aceptar = new System.Windows.Forms.Button();
             this.cancelar = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -103,8 +103,8 @@
             this.tabPage1.Controls.Add(this.c);
             this.tabPage1.Controls.Add(this.nomRepre);
             this.tabPage1.Controls.Add(this.label9);
-            this.tabPage1.Controls.Add(this.ape1);
             this.tabPage1.Controls.Add(this.ciudad);
+            this.tabPage1.Controls.Add(this.labelmpasds);
             this.tabPage1.Controls.Add(this.direccion);
             this.tabPage1.Controls.Add(this.di);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
@@ -187,7 +187,7 @@
             this.nombre.Name = "nombre";
             this.nombre.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.nombre.Size = new System.Drawing.Size(44, 13);
-            this.nombre.TabIndex = 82;
+            this.nombre.TabIndex = 0;
             this.nombre.Text = "Nombre";
             // 
             // correo
@@ -204,7 +204,7 @@
             this.c.Name = "c";
             this.c.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.c.Size = new System.Drawing.Size(38, 13);
-            this.c.TabIndex = 80;
+            this.c.TabIndex = 0;
             this.c.Text = "Correo";
             // 
             // nomRepre
@@ -221,25 +221,25 @@
             this.label9.Name = "label9";
             this.label9.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label9.Size = new System.Drawing.Size(117, 13);
-            this.label9.TabIndex = 76;
+            this.label9.TabIndex = 0;
             this.label9.Text = "Nombre Representante";
-            // 
-            // ape1
-            // 
-            this.ape1.Location = new System.Drawing.Point(133, 131);
-            this.ape1.Name = "ape1";
-            this.ape1.Size = new System.Drawing.Size(242, 20);
-            this.ape1.TabIndex = 3;
             // 
             // ciudad
             // 
-            this.ciudad.AutoSize = true;
-            this.ciudad.Location = new System.Drawing.Point(6, 134);
+            this.ciudad.Location = new System.Drawing.Point(133, 131);
             this.ciudad.Name = "ciudad";
-            this.ciudad.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.ciudad.Size = new System.Drawing.Size(40, 13);
+            this.ciudad.Size = new System.Drawing.Size(242, 20);
             this.ciudad.TabIndex = 3;
-            this.ciudad.Text = "Ciudad";
+            // 
+            // labelmpasds
+            // 
+            this.labelmpasds.AutoSize = true;
+            this.labelmpasds.Location = new System.Drawing.Point(6, 134);
+            this.labelmpasds.Name = "labelmpasds";
+            this.labelmpasds.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.labelmpasds.Size = new System.Drawing.Size(40, 13);
+            this.labelmpasds.TabIndex = 0;
+            this.labelmpasds.Text = "Ciudad";
             // 
             // direccion
             // 
@@ -256,14 +256,14 @@
             this.di.Name = "di";
             this.di.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.di.Size = new System.Drawing.Size(52, 13);
-            this.di.TabIndex = 72;
+            this.di.TabIndex = 0;
             this.di.Text = "Dirección";
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.richTextBox1);
-            this.tabPage2.Controls.Add(this.descuento);
             this.tabPage2.Controls.Add(this.coments);
+            this.tabPage2.Controls.Add(this.descuento);
+            this.tabPage2.Controls.Add(this.textlabes);
             this.tabPage2.Controls.Add(this.label2);
             this.tabPage2.Controls.Add(this.cliente);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
@@ -274,13 +274,13 @@
             this.tabPage2.Text = "Datos Privados";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // richTextBox1
+            // coments
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(112, 226);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(497, 96);
-            this.richTextBox1.TabIndex = 5;
-            this.richTextBox1.Text = "";
+            this.coments.Location = new System.Drawing.Point(112, 226);
+            this.coments.Name = "coments";
+            this.coments.Size = new System.Drawing.Size(497, 96);
+            this.coments.TabIndex = 6;
+            this.coments.Text = "";
             // 
             // descuento
             // 
@@ -289,14 +289,14 @@
             this.descuento.Size = new System.Drawing.Size(120, 20);
             this.descuento.TabIndex = 5;
             // 
-            // coments
+            // textlabes
             // 
-            this.coments.AutoSize = true;
-            this.coments.Location = new System.Drawing.Point(30, 229);
-            this.coments.Name = "coments";
-            this.coments.Size = new System.Drawing.Size(65, 13);
-            this.coments.TabIndex = 0;
-            this.coments.Text = "Comentarios";
+            this.textlabes.AutoSize = true;
+            this.textlabes.Location = new System.Drawing.Point(30, 229);
+            this.textlabes.Name = "textlabes";
+            this.textlabes.Size = new System.Drawing.Size(65, 13);
+            this.textlabes.TabIndex = 0;
+            this.textlabes.Text = "Comentarios";
             // 
             // label2
             // 
@@ -311,7 +311,7 @@
             // 
             this.cliente.Controls.Add(this.multinac);
             this.cliente.Controls.Add(this.grande);
-            this.cliente.Controls.Add(this.madiano);
+            this.cliente.Controls.Add(this.mediano);
             this.cliente.Controls.Add(this.peque);
             this.cliente.Location = new System.Drawing.Point(51, 42);
             this.cliente.Name = "cliente";
@@ -342,16 +342,16 @@
             this.grande.Text = "Grande";
             this.grande.UseVisualStyleBackColor = true;
             // 
-            // madiano
+            // mediano
             // 
-            this.madiano.AutoSize = true;
-            this.madiano.Location = new System.Drawing.Point(18, 54);
-            this.madiano.Name = "madiano";
-            this.madiano.Size = new System.Drawing.Size(66, 17);
-            this.madiano.TabIndex = 2;
-            this.madiano.TabStop = true;
-            this.madiano.Text = "Mediano";
-            this.madiano.UseVisualStyleBackColor = true;
+            this.mediano.AutoSize = true;
+            this.mediano.Location = new System.Drawing.Point(18, 54);
+            this.mediano.Name = "mediano";
+            this.mediano.Size = new System.Drawing.Size(66, 17);
+            this.mediano.TabIndex = 2;
+            this.mediano.TabStop = true;
+            this.mediano.Text = "Mediano";
+            this.mediano.UseVisualStyleBackColor = true;
             // 
             // peque
             // 
@@ -377,6 +377,14 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Logo";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(130, 35);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(220, 20);
+            this.textBox1.TabIndex = 1;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // button1
             // 
@@ -458,14 +466,6 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(130, 35);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(220, 20);
-            this.textBox1.TabIndex = 3;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
             // FrmNuevoCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -506,8 +506,8 @@
         private System.Windows.Forms.Label c;
         private System.Windows.Forms.TextBox nomRepre;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox ape1;
-        private System.Windows.Forms.Label ciudad;
+        private System.Windows.Forms.TextBox ciudad;
+        private System.Windows.Forms.Label labelmpasds;
         private System.Windows.Forms.TextBox direccion;
         private System.Windows.Forms.Label di;
         private System.Windows.Forms.Button aceptar;
@@ -518,15 +518,15 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.MaskedTextBox telefono;
         private System.Windows.Forms.ComboBox pais;
-        private System.Windows.Forms.Label coments;
+        private System.Windows.Forms.Label textlabes;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox cliente;
         private System.Windows.Forms.RadioButton multinac;
         private System.Windows.Forms.RadioButton grande;
-        private System.Windows.Forms.RadioButton madiano;
+        private System.Windows.Forms.RadioButton mediano;
         private System.Windows.Forms.RadioButton peque;
         private System.Windows.Forms.NumericUpDown descuento;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox coments;
         private System.Windows.Forms.Label logo;
         private System.Windows.Forms.MonthCalendar monthCalendar1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;

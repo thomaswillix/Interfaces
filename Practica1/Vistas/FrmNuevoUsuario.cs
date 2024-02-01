@@ -27,12 +27,12 @@ namespace Practica1.Vistas
             List<string> errores = new List<string>();
 
             // Realiza todas las validaciones y recopila los mensajes de error
-            if (!Validator.validateString(user) || user.Text.Length < 4)
+            if (!Validator.validateTextBox(user) || user.Text.Length < 4)
             {
                 errores.Add("El usuario está vacío o no cumple la longitud mínima.");
             }
             
-            if (!Validator.validateString(pass) || pass.Text.Length < 4)
+            if (!Validator.validateTextBox(pass) || pass.Text.Length < 4)
             {
                 errores.Add("La contraseña está vacía o no cumple la longitud mínima.");
             }

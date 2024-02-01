@@ -38,6 +38,10 @@ public class Empleado
         this.puesto = puesto;
         this.fechaNac = fechaNac;
     }
+    public Empleado(string nombre)
+    {
+        this.nombre = nombre;
+    }
     public Empleado() { }
 
     public bool esJefe()
