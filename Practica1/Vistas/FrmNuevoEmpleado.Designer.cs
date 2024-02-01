@@ -201,7 +201,6 @@
             0,
             0,
             0});
-            this.tlf.ValueChanged += new System.EventHandler(this.tlf_ValueChanged);
             // 
             // correo
             // 
@@ -243,7 +242,6 @@
             this.come.Name = "come";
             this.come.Size = new System.Drawing.Size(100, 20);
             this.come.TabIndex = 11;
-            this.come.TextChanged += new System.EventHandler(this.come_TextChanged);
             // 
             // label5
             // 
@@ -254,7 +252,6 @@
             this.label5.Size = new System.Drawing.Size(65, 13);
             this.label5.TabIndex = 50;
             this.label5.Text = "Comentarios";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // bt2
             // 
@@ -299,7 +296,6 @@
             this.puesto.Name = "puesto";
             this.puesto.Size = new System.Drawing.Size(121, 21);
             this.puesto.TabIndex = 6;
-            this.puesto.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // dni
             // 
@@ -318,7 +314,7 @@
             this.label6.TabIndex = 57;
             this.label6.Text = "DNI/NIE";
             // 
-            // nuevo_empleado
+            // FrmNuevoEmpleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -351,9 +347,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label122);
-            this.Name = "nuevo_empleado";
+            this.Name = "FrmNuevoEmpleado";
             this.Text = "nuevo_empleado";
-            this.Load += new System.EventHandler(this.nuevo_empleado_Load);
             ((System.ComponentModel.ISupportInitialize)(this.cod)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tlf)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numSS)).EndInit();

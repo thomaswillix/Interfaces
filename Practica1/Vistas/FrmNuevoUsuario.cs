@@ -24,48 +24,44 @@ namespace Practica1.Vistas
         }
         private bool validar()
         {
-            if (user.Text == "" || pass.Text == "" || pass.Text.Length < 4  || user.Text.Length < 4)
+            List<string> errores = new List<string>();
+
+            // Realiza todas las validaciones y recopila los mensajes de error
+            if (!Validator.validateString(user) || user.Text.Length < 4)
             {
+                errores.Add("El usuario está vacío o no cumple la longitud mínima.");
+            }
+            
+            if (!Validator.validateString(pass) || pass.Text.Length < 4)
+            {
+                errores.Add("La contraseña está vacía o no cumple la longitud mínima.");
+            }
+            // Si hay mensajes de error, imprímelos y devuelve false
+            if (errores.Count > 0)
+            {
+                foreach (var error in errores)
+                {
+                    Console.WriteLine(error);
+                }
                 return false;
             }
-            else
-            {
-                return true;
-            }
+            // Si no hay errores, devuelve true
+            return true;
         }
         private void vaciarCampos()
         {
             user.Text = "";
             pass.Text = "";
         }
-        private void camposNormal()
-        {
-            user.BackColor = Color.White; 
-            pass.BackColor = Color.White;
-        }
-        private void camposIncorrectos()
-        {
-            if (user.Text == "" || user.Text.Length < 4)
-            {
-                user.BackColor = Color.Red;
-            }
-            if (pass.Text == "" || pass.Text.Length < 4) 
-            {
-                pass.BackColor = Color.Red;
 
-            }
-        }
         private void b1_Click(object sender, EventArgs e)
         {
             if (validar())
             {
                 aniadirUsu();
                 vaciarCampos();
-                camposNormal();
             }
             else {
-                camposNormal();
-                camposIncorrectos();
                 MessageBox.Show("Revisa los campos, hay algún dato erróneo");
             }
         }
@@ -84,7 +80,6 @@ namespace Practica1.Vistas
                 ControladorUsuariosXML.listaUsuarios.Add(u);
                 ControladorUsuariosXML.escribirUsuariosXML();
                 MessageBox.Show("Usuario registrado con éxito.");
-
             }
         }
     }

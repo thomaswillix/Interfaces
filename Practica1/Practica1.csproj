@@ -95,18 +95,13 @@
     <Compile Include="manejadores\ControladorEmpleadosJSON.cs" />
     <Compile Include="manejadores\ControladorProyectosBin.cs" />
     <Compile Include="manejadores\ControladorUsuariosXML.cs" />
+    <Compile Include="Modelo\Validator.cs" />
     <Compile Include="Modelo\Cliente.cs" />
     <Compile Include="Modelo\Empleado.cs" />
-    <Compile Include="Modelo\ValidacionEmail.cs" />
     <Compile Include="SampleDatabaseDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>SampleDatabaseDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="SampleDatabaseDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>SampleDatabaseDataSet1.xsd</DependentUpon>
     </Compile>
     <Compile Include="Vistas\FrmEmpleados.cs">
       <SubType>Form</SubType>
@@ -213,17 +208,6 @@
     </None>
     <None Include="SampleDatabaseDataSet.xss">
       <DependentUpon>SampleDatabaseDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="SampleDatabaseDataSet1.xsc">
-      <DependentUpon>SampleDatabaseDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="SampleDatabaseDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>SampleDatabaseDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="SampleDatabaseDataSet1.xss">
-      <DependentUpon>SampleDatabaseDataSet1.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

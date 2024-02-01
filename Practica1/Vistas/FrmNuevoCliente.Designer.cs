@@ -114,7 +114,6 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Datos Generales";
             this.tabPage1.UseVisualStyleBackColor = true;
-            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // pais
             // 
@@ -190,7 +189,6 @@
             this.nombre.Size = new System.Drawing.Size(44, 13);
             this.nombre.TabIndex = 82;
             this.nombre.Text = "Nombre";
-            this.nombre.Click += new System.EventHandler(this.label6_Click);
             // 
             // correo
             // 
@@ -198,7 +196,6 @@
             this.correo.Name = "correo";
             this.correo.Size = new System.Drawing.Size(242, 20);
             this.correo.TabIndex = 5;
-            this.correo.TextChanged += new System.EventHandler(this.correo_TextChanged);
             // 
             // c
             // 
@@ -209,7 +206,6 @@
             this.c.Size = new System.Drawing.Size(38, 13);
             this.c.TabIndex = 80;
             this.c.Text = "Correo";
-            this.c.Click += new System.EventHandler(this.c_Click);
             // 
             // nomRepre
             // 
@@ -217,7 +213,6 @@
             this.nomRepre.Name = "nomRepre";
             this.nomRepre.Size = new System.Drawing.Size(242, 20);
             this.nomRepre.TabIndex = 4;
-            this.nomRepre.TextChanged += new System.EventHandler(this.ape2_TextChanged);
             // 
             // label9
             // 
@@ -228,7 +223,6 @@
             this.label9.Size = new System.Drawing.Size(117, 13);
             this.label9.TabIndex = 76;
             this.label9.Text = "Nombre Representante";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // ape1
             // 
@@ -236,7 +230,6 @@
             this.ape1.Name = "ape1";
             this.ape1.Size = new System.Drawing.Size(242, 20);
             this.ape1.TabIndex = 3;
-            this.ape1.TextChanged += new System.EventHandler(this.ape1_TextChanged);
             // 
             // ciudad
             // 
@@ -247,7 +240,6 @@
             this.ciudad.Size = new System.Drawing.Size(40, 13);
             this.ciudad.TabIndex = 3;
             this.ciudad.Text = "Ciudad";
-            this.ciudad.Click += new System.EventHandler(this.label8_Click);
             // 
             // direccion
             // 
@@ -256,7 +248,6 @@
             this.direccion.Name = "direccion";
             this.direccion.Size = new System.Drawing.Size(242, 50);
             this.direccion.TabIndex = 2;
-            this.direccion.TextChanged += new System.EventHandler(this.direccion_TextChanged);
             // 
             // di
             // 
@@ -386,7 +377,6 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Logo";
             this.tabPage3.UseVisualStyleBackColor = true;
-            this.tabPage3.Click += new System.EventHandler(this.tabPage3_Click);
             // 
             // button1
             // 
@@ -426,7 +416,6 @@
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Citas";
             this.tabPage4.UseVisualStyleBackColor = true;
-            this.tabPage4.Click += new System.EventHandler(this.tabPage4_Click);
             // 
             // monthCalendar1
             // 
@@ -438,7 +427,6 @@
         new System.DateTime(2024, 2, 13, 0, 0, 0, 0)};
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 1;
-            this.monthCalendar1.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar1_DateChanged);
             // 
             // dateTimePicker1
             // 

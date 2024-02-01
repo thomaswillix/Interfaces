@@ -32,74 +32,16 @@ namespace Practica1.Vistas
             vacationStart.AddDays(-1);
             this.monthCalendar1.SelectionEnd = vacationEnd.AddDays(-1);
         }
-        private void AddBoledDate()
+        private void AddBoldedDate()
         {
             DateTime d = new DateTime(2024, 2, 12);
             this.monthCalendar1.AddMonthlyBoldedDate(d);
-        }
-        private void tabPage1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ape2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void c_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void correo_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ape1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void direccion_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabPage3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
-        {
-
-        }
-
-        private void tabPage4_Click(object sender, EventArgs e)
-        {
-         
         }
 
         private void FrmNuevoCliente_Load(object sender, EventArgs e)
         {
             ShowAWeeksVacationOneMonthFromToday();
+            AddBoldedDate();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -115,32 +57,32 @@ namespace Practica1.Vistas
 
         private void aceptar_Click(object sender, EventArgs e)
         {
-            validar();
-
-            switch (tabControl1.SelectedTab)
+            
+            if (tabControl1.SelectedTab == tabPage1)
             {
-                case tabPage1:
+                validarTab1();
+
+            }
+
+           /* switch (tabControl1.SelectedTab)
+            {
+                case    :
                     tabControl1.SelectedTab = tabPage2;
                     break;
                 string id = "tabPage";
                 string numVal = i.ToString();
                 // tabControl1.SelectedTab = id + numVal;
-            }
+            }*/
         }
 
-        private void validar()
+        private void validarTab1()
         {
-            if()
+            
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             pictureBox1.ImageLocation = textBox1.Text;
-        }
-
-        private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
-        {
-
         }
     }
 }

@@ -66,7 +66,6 @@
             this.label122.Size = new System.Drawing.Size(40, 13);
             this.label122.TabIndex = 0;
             this.label122.Text = "Código";
-            this.label122.Click += new System.EventHandler(this.label1_Click);
             // 
             // label13
             // 
@@ -77,7 +76,6 @@
             this.label13.Size = new System.Drawing.Size(63, 13);
             this.label13.TabIndex = 1;
             this.label13.Text = "Descripción";
-            this.label13.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -88,7 +86,6 @@
             this.label1.Size = new System.Drawing.Size(80, 13);
             this.label1.TabIndex = 2;
             this.label1.Text = "Fecha de Inicio";
-            this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // label2
             // 
@@ -99,7 +96,6 @@
             this.label2.Size = new System.Drawing.Size(69, 13);
             this.label2.TabIndex = 3;
             this.label2.Text = "Fecha de Fin";
-            this.label2.Click += new System.EventHandler(this.label2_Click_1);
             // 
             // label3
             // 
@@ -160,9 +156,6 @@
             this.cambios.TabIndex = 8;
             this.cambios.Text = "Actualizado";
             this.cambios.UseVisualStyleBackColor = true;
-            this.cambios.CheckedChanged += new System.EventHandler(this.cambios_CheckedChanged);
-            this.cambios.MouseDown += new System.Windows.Forms.MouseEventHandler(this.checkBox1_MouseDown);
-            this.cambios.MouseEnter += new System.EventHandler(this.checkBox1_MouseEnter);
             this.cambios.MouseHover += new System.EventHandler(this.checkBox1_MouseHover);
             // 
             // estado
@@ -174,7 +167,6 @@
             this.estado.TabIndex = 5;
             this.estado.Text = "Activo";
             this.estado.UseVisualStyleBackColor = true;
-            this.estado.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             this.estado.MouseHover += new System.EventHandler(this.checkBox2_MouseHover);
             // 
             // desc
@@ -205,7 +197,6 @@
             this.cod.Name = "cod";
             this.cod.Size = new System.Drawing.Size(120, 20);
             this.cod.TabIndex = 1;
-            this.cod.ValueChanged += new System.EventHandler(this.cod_ValueChanged);
             // 
             // codCli
             // 
@@ -290,7 +281,6 @@
             this.Controls.Add(this.label122);
             this.Name = "nuevo_proyecto";
             this.Text = "nuevo_proyecto";
-            this.Load += new System.EventHandler(this.nuevo_proyecto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.cod)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.codCli)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.presuFin)).EndInit();
