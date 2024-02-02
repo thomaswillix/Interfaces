@@ -49,12 +49,18 @@ namespace Practica1.Vistas
         private void button1_Click(object sender, EventArgs e)
         {
             openFileDialog1.ShowDialog();
-            Image newLogo = Image.FromFile(openFileDialog1.FileName);
-            textBox1.Text = openFileDialog1.FileName; 
-            
-            pictureBox1.Image = newLogo;
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-                        
+            try
+            {
+                Image newLogo = Image.FromFile(openFileDialog1.FileName);
+                textBox1.Text = openFileDialog1.FileName;
+
+                pictureBox1.Image = newLogo;
+                pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            }
+            catch (System.IO.FileNotFoundException)
+            {
+                Console.WriteLine("Archivo no encontrado");
+            }
         }
 
         private void aceptar_Click(object sender, EventArgs e)
@@ -243,14 +249,17 @@ namespace Practica1.Vistas
         {
             RadioButton rb = new RadioButton();
 
-            if (peque.Checked)
-                rb = peque;
-            else if(mediano.Checked)
-                rb = mediano;
-            else if(grande.Checked)
-                rb = grande;
-            else
-                rb = multinac;
+            foreach (Control cli in cliente.Controls)
+            {
+                if (cli is RadioButton)
+                {
+                    RadioButton r = (RadioButton) cli;
+                    if (r.Checked)
+                    {
+                        rb = r;
+                    }
+                }
+            }
 
             Empleado e = new Empleado(nomRepre.Text);
             Cliente c = new Cliente(cif.Text, nom.Text, direccion.Text, ciudad.Text, e, correo.Text,

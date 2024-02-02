@@ -237,3 +237,5 @@ C:\Users\thoma\Source\Repos\thomaswillix\Interfaces\Practica1\bin\Debug\System.T
 C:\Users\thoma\Source\Repos\thomaswillix\Interfaces\Practica1\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\thoma\Source\Repos\thomaswillix\Interfaces\Practica1\bin\Debug\System.ValueTuple.xml
 C:\Users\thoma\Source\Repos\thomaswillix\Interfaces\Practica1\obj\Debug\Practica1.csproj.CopyComplete
+C:\Users\Lucía\Source\Repos\thomaswillix\Interfaces\Practica1\bin\Debug\SampleDatabase.mdf
+C:\Users\Lucía\Source\Repos\thomaswillix\Interfaces\Practica1\bin\Debug\SampleDatabase_log.ldf
