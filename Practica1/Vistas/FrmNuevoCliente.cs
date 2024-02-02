@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Practica1.manejadores;
 using Practica1.Modelo;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
 
 namespace Practica1.Vistas
@@ -49,20 +50,41 @@ namespace Practica1.Vistas
         private void button1_Click(object sender, EventArgs e)
         {
             openFileDialog1.ShowDialog();
-            try
-            {
-                Image newLogo = Image.FromFile(openFileDialog1.FileName);
-                textBox1.Text = openFileDialog1.FileName;
-
-                pictureBox1.Image = newLogo;
-                pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            }
-            catch (System.IO.FileNotFoundException)
-            {
-                Console.WriteLine("Archivo no encontrado");
-            }
+            startTimer();
         }
 
+        private void startTimer()
+        {
+            timer1.Enabled = true;
+            timer1.Start();
+            timer1.Interval = 200;
+            progressBar1.Maximum = 10;
+            timer1.Tick += new EventHandler(timer1_Tick);
+        }
+
+        void timer1_Tick(object sender, EventArgs e)
+        {
+            if (progressBar1.Value != 10)
+            {
+                progressBar1.Value++;
+            }
+            else
+            {
+                timer1.Stop();
+                progressBar1.Hide();
+                try
+                {
+                    Image newLogo = Image.FromFile(openFileDialog1.FileName);
+                    textBox1.Text = openFileDialog1.FileName;
+                    pictureBox1.Image = newLogo;
+                    pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+                }
+                catch (System.IO.FileNotFoundException)
+                {
+                    Console.WriteLine("Archivo no encontrado");
+                }
+            }
+        }
         private void aceptar_Click(object sender, EventArgs e)
         {
             // Crear un diccionario que mapea las pestañas a las funciones de validación
@@ -273,6 +295,11 @@ namespace Practica1.Vistas
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             pictureBox1.ImageLocation = textBox1.Text;
+        }
+
+        private void tabPage3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

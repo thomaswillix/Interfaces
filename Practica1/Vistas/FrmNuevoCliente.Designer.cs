@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.pais = new System.Windows.Forms.ComboBox();
@@ -67,6 +68,8 @@
             this.aceptar = new System.Windows.Forms.Button();
             this.cancelar = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -366,6 +369,7 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.progressBar1);
             this.tabPage3.Controls.Add(this.textBox1);
             this.tabPage3.Controls.Add(this.button1);
             this.tabPage3.Controls.Add(this.pictureBox1);
@@ -377,17 +381,18 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Logo";
             this.tabPage3.UseVisualStyleBackColor = true;
+            this.tabPage3.Click += new System.EventHandler(this.tabPage3_Click);
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(130, 35);
+            this.textBox1.Location = new System.Drawing.Point(159, 31);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(220, 20);
             this.textBox1.TabIndex = 1;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(378, 32);
+            this.button1.Location = new System.Drawing.Point(407, 28);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 2;
@@ -397,7 +402,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(144, 87);
+            this.pictureBox1.Location = new System.Drawing.Point(144, 78);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(278, 177);
             this.pictureBox1.TabIndex = 1;
@@ -406,7 +411,7 @@
             // logo
             // 
             this.logo.AutoSize = true;
-            this.logo.Location = new System.Drawing.Point(70, 37);
+            this.logo.Location = new System.Drawing.Point(99, 33);
             this.logo.Name = "logo";
             this.logo.Size = new System.Drawing.Size(31, 13);
             this.logo.TabIndex = 0;
@@ -464,6 +469,13 @@
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.Location = new System.Drawing.Point(102, 274);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(380, 23);
+            this.progressBar1.TabIndex = 3;
             // 
             // FrmNuevoCliente
             // 
@@ -533,5 +545,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox textBox1;
         internal System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.ProgressBar progressBar1;
     }
 }
