@@ -45,6 +45,7 @@ namespace Practica1.Vistas
         {
             ShowAWeeksVacationOneMonthFromToday();
             AddBoldedDate();
+            progressBar1.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -55,6 +56,7 @@ namespace Practica1.Vistas
 
         private void startTimer()
         {
+            progressBar1.Show();
             timer1.Enabled = true;
             timer1.Start();
             timer1.Interval = 200;
@@ -300,6 +302,22 @@ namespace Practica1.Vistas
         private void tabPage3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void colorrcb_Click(object sender, EventArgs e)
+        {
+            if (colorDialog1.ShowDialog() == DialogResult.OK)
+            {
+                coments.BackColor = colorDialog1.Color;
+            }
+        }
+
+        private void fuentercb_Click(object sender, EventArgs e)
+        {
+            if (fontDialog1.ShowDialog() == DialogResult.OK)
+            {
+                coments.Font = fontDialog1.Font;
+            }
         }
     }
 }

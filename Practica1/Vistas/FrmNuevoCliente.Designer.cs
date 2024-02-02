@@ -58,6 +58,7 @@
             this.mediano = new System.Windows.Forms.RadioButton();
             this.peque = new System.Windows.Forms.RadioButton();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -69,7 +70,10 @@
             this.cancelar = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
+            this.fontDialog1 = new System.Windows.Forms.FontDialog();
+            this.colorrcb = new System.Windows.Forms.Button();
+            this.fuentercb = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -264,6 +268,8 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.fuentercb);
+            this.tabPage2.Controls.Add(this.colorrcb);
             this.tabPage2.Controls.Add(this.coments);
             this.tabPage2.Controls.Add(this.descuento);
             this.tabPage2.Controls.Add(this.textlabes);
@@ -383,6 +389,13 @@
             this.tabPage3.UseVisualStyleBackColor = true;
             this.tabPage3.Click += new System.EventHandler(this.tabPage3_Click);
             // 
+            // progressBar1
+            // 
+            this.progressBar1.Location = new System.Drawing.Point(102, 274);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(380, 23);
+            this.progressBar1.TabIndex = 3;
+            // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(159, 31);
@@ -470,12 +483,25 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // progressBar1
+            // colorrcb
             // 
-            this.progressBar1.Location = new System.Drawing.Point(102, 274);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(380, 23);
-            this.progressBar1.TabIndex = 3;
+            this.colorrcb.Location = new System.Drawing.Point(38, 245);
+            this.colorrcb.Name = "colorrcb";
+            this.colorrcb.Size = new System.Drawing.Size(43, 23);
+            this.colorrcb.TabIndex = 7;
+            this.colorrcb.Text = "Color";
+            this.colorrcb.UseVisualStyleBackColor = true;
+            this.colorrcb.Click += new System.EventHandler(this.colorrcb_Click);
+            // 
+            // fuentercb
+            // 
+            this.fuentercb.Location = new System.Drawing.Point(38, 274);
+            this.fuentercb.Name = "fuentercb";
+            this.fuentercb.Size = new System.Drawing.Size(43, 23);
+            this.fuentercb.TabIndex = 8;
+            this.fuentercb.Text = "Fuente";
+            this.fuentercb.UseVisualStyleBackColor = true;
+            this.fuentercb.Click += new System.EventHandler(this.fuentercb_Click);
             // 
             // FrmNuevoCliente
             // 
@@ -547,5 +573,9 @@
         internal System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.ColorDialog colorDialog1;
+        private System.Windows.Forms.FontDialog fontDialog1;
+        private System.Windows.Forms.Button colorrcb;
+        private System.Windows.Forms.Button fuentercb;
     }
 }
