@@ -319,5 +319,25 @@ namespace Practica1.Vistas
                 coments.Font = fontDialog1.Font;
             }
         }
+
+        private void btnExportar_Click(object sender, EventArgs e)
+        {
+            var rutaAArchivo = string.Empty;
+            using (SaveFileDialog saveFileDialog1 = new SaveFileDialog())
+            {
+                if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+                {
+                    try
+                    {
+                        coments.SaveFile(saveFileDialog1.FileName);
+                        MessageBox.Show("Datos exportados");
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Datos NO exportados");
+                    }
+                }
+            }
+        }
     }
 }

@@ -3,21 +3,26 @@
   <Usuario>
     <User>root</User>
     <Pass>1234</Pass>
+    <EsAdmin>true</EsAdmin>
   </Usuario>
   <Usuario>
     <User>jorge</User>
     <Pass>4321</Pass>
+    <EsAdmin>false</EsAdmin>
   </Usuario>
   <Usuario>
     <User>jaime</User>
     <Pass>4444</Pass>
+    <EsAdmin>false</EsAdmin>
   </Usuario>
   <Usuario>
     <User>jose</User>
     <Pass>1111</Pass>
+    <EsAdmin>false</EsAdmin>
   </Usuario>
   <Usuario>
-    <User>javier</User>
+    <User>thomas</User>
     <Pass>2222</Pass>
+    <EsAdmin>true</EsAdmin>
   </Usuario>
 </ArrayOfUsuario>

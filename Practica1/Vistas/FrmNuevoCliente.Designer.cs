@@ -74,6 +74,7 @@
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
             this.colorrcb = new System.Windows.Forms.Button();
             this.fuentercb = new System.Windows.Forms.Button();
+            this.btnExportar = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -268,6 +269,7 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.btnExportar);
             this.tabPage2.Controls.Add(this.fuentercb);
             this.tabPage2.Controls.Add(this.colorrcb);
             this.tabPage2.Controls.Add(this.coments);
@@ -485,9 +487,9 @@
             // 
             // colorrcb
             // 
-            this.colorrcb.Location = new System.Drawing.Point(38, 245);
+            this.colorrcb.Location = new System.Drawing.Point(518, 197);
             this.colorrcb.Name = "colorrcb";
-            this.colorrcb.Size = new System.Drawing.Size(43, 23);
+            this.colorrcb.Size = new System.Drawing.Size(79, 23);
             this.colorrcb.TabIndex = 7;
             this.colorrcb.Text = "Color";
             this.colorrcb.UseVisualStyleBackColor = true;
@@ -495,13 +497,23 @@
             // 
             // fuentercb
             // 
-            this.fuentercb.Location = new System.Drawing.Point(38, 274);
+            this.fuentercb.Location = new System.Drawing.Point(414, 197);
             this.fuentercb.Name = "fuentercb";
-            this.fuentercb.Size = new System.Drawing.Size(43, 23);
+            this.fuentercb.Size = new System.Drawing.Size(79, 23);
             this.fuentercb.TabIndex = 8;
             this.fuentercb.Text = "Fuente";
             this.fuentercb.UseVisualStyleBackColor = true;
             this.fuentercb.Click += new System.EventHandler(this.fuentercb_Click);
+            // 
+            // btnExportar
+            // 
+            this.btnExportar.Location = new System.Drawing.Point(28, 259);
+            this.btnExportar.Name = "btnExportar";
+            this.btnExportar.Size = new System.Drawing.Size(67, 23);
+            this.btnExportar.TabIndex = 9;
+            this.btnExportar.Text = "Exportar";
+            this.btnExportar.UseVisualStyleBackColor = true;
+            this.btnExportar.Click += new System.EventHandler(this.btnExportar_Click);
             // 
             // FrmNuevoCliente
             // 
@@ -577,5 +589,6 @@
         private System.Windows.Forms.FontDialog fontDialog1;
         private System.Windows.Forms.Button colorrcb;
         private System.Windows.Forms.Button fuentercb;
+        private System.Windows.Forms.Button btnExportar;
     }
 }

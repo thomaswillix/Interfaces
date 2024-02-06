@@ -91,11 +91,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="manejadores\ControladorClientesXML.cs" />
-    <Compile Include="manejadores\ControladorEmpleadosJSON.cs" />
-    <Compile Include="manejadores\ControladorProyectosBin.cs" />
-    <Compile Include="manejadores\ControladorUsuariosXML.cs" />
-    <Compile Include="manejadores\Validator.cs" />
+    <Compile Include="Manejadores\ControladorClientesXML.cs" />
+    <Compile Include="Manejadores\ControladorEmpleadosJSON.cs" />
+    <Compile Include="Manejadores\ControladorProyectosBin.cs" />
+    <Compile Include="Manejadores\ControladorUsuariosXML.cs" />
+    <Compile Include="Manejadores\Validator.cs" />
     <Compile Include="Modelo\Cliente.cs" />
     <Compile Include="Modelo\Empleado.cs" />
     <Compile Include="SampleDatabaseDataSet.Designer.cs">

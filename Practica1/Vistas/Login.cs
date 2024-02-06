@@ -100,8 +100,9 @@ namespace Practica1
 
         private void GestionaIES_Load(object sender, System.EventArgs e)
         {
-            ControladorUsuariosXML.cargarUsuarios();
-            ControladorUsuariosXML.escribirUsuariosXML();
+            //ControladorUsuariosXML.cargarUsuarios();
+            //ControladorUsuariosXML.escribirUsuariosXML();
+            ControladorUsuariosXML.leerUsuariosXML();
         }
 
         private void button1_Click_1(object sender, System.EventArgs e)

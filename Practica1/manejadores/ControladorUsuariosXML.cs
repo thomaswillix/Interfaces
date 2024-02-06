@@ -58,7 +58,7 @@ namespace Practica1.manejadores
                 if ((usuario == listaUsuarios[i].User.ToLower())
                     && (clave == listaUsuarios[i].Pass))
                 {
-                    Usuario.u = new Usuario(usuario, clave);
+                    Usuario.u = new Usuario(usuario, clave, listaUsuarios[i].EsAdmin);
                     return true;
                 }
                 else if ((usuario != listaUsuarios[i].User.ToLower())
@@ -88,15 +88,15 @@ namespace Practica1.manejadores
         }
         public static void cargarUsuarios()
         {
-            Usuario u = new Usuario("root", "1234");
+            Usuario u = new Usuario("root", "1234", true);
             listaUsuarios.Add(u);
-            u = new Usuario("jorge", "4321");
+            u = new Usuario("jorge", "4321", false);
             listaUsuarios.Add(u);
-            u = new Usuario("jaime", "4444");
+            u = new Usuario("jaime", "4444", false);
             listaUsuarios.Add(u);
-            u = new Usuario("jose", "1111");
+            u = new Usuario("jose", "1111", false);
             listaUsuarios.Add(u);
-            u = new Usuario("javier", "2222");
+            u = new Usuario("thomas", "2222", true);
             listaUsuarios.Add(u);
         }
     }
