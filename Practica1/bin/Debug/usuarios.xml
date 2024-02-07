@@ -23,6 +23,6 @@
   <Usuario>
     <User>thomas</User>
     <Pass>2222</Pass>
-    <EsAdmin>true</EsAdmin>
+    <EsAdmin>false</EsAdmin>
   </Usuario>
 </ArrayOfUsuario>

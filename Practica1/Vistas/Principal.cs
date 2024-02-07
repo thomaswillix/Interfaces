@@ -16,12 +16,19 @@ namespace Practica1
         public Principal()
         {
             InitializeComponent();
+
         }
 
         private void Principal_Load(object sender, EventArgs e)
         {
             //Mensaje personalizado para la pestaña principal.
             label2.Text += " " +Usuario.u.User;
+
+            logsToolStripMenuItem.Visible = false;
+            if (Usuario.u.EsAdmin)
+            {
+                logsToolStripMenuItem.Visible = true;
+            }
         }
         private void Principal_FormClosing(object sender,FormClosingEventArgs e)
         {
@@ -69,6 +76,22 @@ namespace Practica1
         {
             FrmNuevoCliente nuevoCliente = new FrmNuevoCliente();
             nuevoCliente.ShowDialog();
+        }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void verLogsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FolderBrowserDialog folderBrowserDialog = new FolderBrowserDialog();
+            folderBrowserDialog.SelectedPath = ".";
+        }
+
+        private void logsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 

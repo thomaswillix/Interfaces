@@ -96,7 +96,7 @@ namespace Practica1.manejadores
             listaUsuarios.Add(u);
             u = new Usuario("jose", "1111", false);
             listaUsuarios.Add(u);
-            u = new Usuario("thomas", "2222", true);
+            u = new Usuario("thomas", "2222", false);
             listaUsuarios.Add(u);
         }
     }
