@@ -64,6 +64,7 @@
             this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label2 = new System.Windows.Forms.Label();
+            this.folderBrowserDialog = new System.Windows.Forms.FolderBrowserDialog();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -329,7 +330,7 @@
             this.logsToolStripMenuItem.Name = "logsToolStripMenuItem";
             this.logsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.logsToolStripMenuItem.Text = "Ver Logs";
-            this.logsToolStripMenuItem.Click += new System.EventHandler(this.logsToolStripMenuItem_Click);
+            this.logsToolStripMenuItem.Click += new System.EventHandler(this.verLogsToolStripMenuItem_Click);
             // 
             // label2
             // 
@@ -402,5 +403,6 @@
         private System.Windows.Forms.ToolStripMenuItem acercaDeToolStripMenuItem;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ToolStripMenuItem logsToolStripMenuItem;
+        private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog;
     }
 }

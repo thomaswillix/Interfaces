@@ -97,6 +97,7 @@
     <Compile Include="Manejadores\ControladorUsuariosXML.cs" />
     <Compile Include="Manejadores\Validator.cs" />
     <Compile Include="Modelo\Cliente.cs" />
+    <Compile Include="Modelo\ComponentesProyecto.cs" />
     <Compile Include="Modelo\Empleado.cs" />
     <Compile Include="SampleDatabaseDataSet.Designer.cs">
       <AutoGen>True</AutoGen>

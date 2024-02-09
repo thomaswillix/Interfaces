@@ -239,3 +239,4 @@ C:\Users\thoma\Source\Repos\thomaswillix\Interfaces\Practica1\bin\Debug\System.V
 C:\Users\thoma\Source\Repos\thomaswillix\Interfaces\Practica1\obj\Debug\Practica1.csproj.CopyComplete
 C:\Users\Lucía\Source\Repos\thomaswillix\Interfaces\Practica1\bin\Debug\SampleDatabase.mdf
 C:\Users\Lucía\Source\Repos\thomaswillix\Interfaces\Practica1\bin\Debug\SampleDatabase_log.ldf
+C:\Users\Lucía\Source\Repos\thomaswillix\Interfaces\Practica1\obj\Debug\Practica1.Vistas.Logs.resources

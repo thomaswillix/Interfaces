@@ -87,6 +87,15 @@ namespace Practica1
         {
             FolderBrowserDialog folderBrowserDialog = new FolderBrowserDialog();
             folderBrowserDialog.SelectedPath = ".";
+            folderBrowserDialog.ShowDialog();
+
+            if (folderBrowserDialog.ShowDialog() == DialogResult.OK)
+            {
+                Logs logs = new Logs();
+                //propiedad pública del formulario log
+                logs.directorio = folderBrowserDialog.SelectedPath;
+                logs.ShowDialog();
+            }
         }
 
         private void logsToolStripMenuItem_Click(object sender, EventArgs e)

@@ -14,7 +14,7 @@ namespace Practica1.Vistas
 {
     public partial class Logs : Form
     {
-        public string directorio = ;
+        public string directorio = "";
         public Logs()
         {
             InitializeComponent();
@@ -37,6 +37,11 @@ namespace Practica1.Vistas
         {
             richTextBox1.Text = File.ReadAllText(directorio + "/" +
             treeView1.SelectedNode.Text);
+        }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
