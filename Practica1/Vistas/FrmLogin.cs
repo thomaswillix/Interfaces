@@ -7,12 +7,12 @@ using Practica1.Vistas;
 
 namespace Practica1
 {
-    public partial class Login : Form
+    public partial class FrmLogin : Form
     {
         private int intentos = 0;
         
 
-        public Login()
+        public FrmLogin()
         {
             InitializeComponent();
         }
@@ -32,7 +32,7 @@ namespace Practica1
                 cuadroUsu.Clear();
                 cuadroCont.Clear();
                 this.Hide();
-                Principal Form = new Principal();
+                FrmPrincipal Form = new FrmPrincipal();
                 Form.ShowDialog();
                 Form.Dispose();
                 this.Show();

@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmNuevoProyecto));
             this.label122 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -60,7 +59,7 @@
             // label122
             // 
             this.label122.AutoSize = true;
-            this.label122.Location = new System.Drawing.Point(67, 58);
+            this.label122.Location = new System.Drawing.Point(12, 31);
             this.label122.Name = "label122";
             this.label122.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label122.Size = new System.Drawing.Size(40, 13);
@@ -70,7 +69,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(67, 88);
+            this.label13.Location = new System.Drawing.Point(12, 61);
             this.label13.Name = "label13";
             this.label13.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label13.Size = new System.Drawing.Size(63, 13);
@@ -80,7 +79,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(67, 120);
+            this.label1.Location = new System.Drawing.Point(12, 93);
             this.label1.Name = "label1";
             this.label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label1.Size = new System.Drawing.Size(80, 13);
@@ -90,7 +89,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(67, 150);
+            this.label2.Location = new System.Drawing.Point(12, 123);
             this.label2.Name = "label2";
             this.label2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label2.Size = new System.Drawing.Size(69, 13);
@@ -100,7 +99,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(67, 178);
+            this.label3.Location = new System.Drawing.Point(12, 151);
             this.label3.Name = "label3";
             this.label3.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label3.Size = new System.Drawing.Size(40, 13);
@@ -110,7 +109,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(67, 207);
+            this.label4.Location = new System.Drawing.Point(12, 180);
             this.label4.Name = "label4";
             this.label4.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label4.Size = new System.Drawing.Size(109, 13);
@@ -120,7 +119,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(67, 238);
+            this.label5.Location = new System.Drawing.Point(12, 211);
             this.label5.Name = "label5";
             this.label5.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label5.Size = new System.Drawing.Size(102, 13);
@@ -130,7 +129,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(67, 269);
+            this.label6.Location = new System.Drawing.Point(12, 242);
             this.label6.Name = "label6";
             this.label6.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label6.Size = new System.Drawing.Size(47, 13);
@@ -140,7 +139,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(67, 298);
+            this.label7.Location = new System.Drawing.Point(12, 271);
             this.label7.Name = "label7";
             this.label7.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label7.Size = new System.Drawing.Size(90, 13);
@@ -150,7 +149,7 @@
             // cambios
             // 
             this.cambios.AutoSize = true;
-            this.cambios.Location = new System.Drawing.Point(190, 268);
+            this.cambios.Location = new System.Drawing.Point(135, 241);
             this.cambios.Name = "cambios";
             this.cambios.Size = new System.Drawing.Size(81, 17);
             this.cambios.TabIndex = 8;
@@ -161,7 +160,7 @@
             // estado
             // 
             this.estado.AutoSize = true;
-            this.estado.Location = new System.Drawing.Point(190, 177);
+            this.estado.Location = new System.Drawing.Point(135, 150);
             this.estado.Name = "estado";
             this.estado.Size = new System.Drawing.Size(56, 17);
             this.estado.TabIndex = 5;
@@ -171,21 +170,21 @@
             // 
             // desc
             // 
-            this.desc.Location = new System.Drawing.Point(190, 85);
+            this.desc.Location = new System.Drawing.Point(135, 58);
             this.desc.Name = "desc";
             this.desc.Size = new System.Drawing.Size(100, 20);
             this.desc.TabIndex = 2;
             // 
             // fechaIni
             // 
-            this.fechaIni.Location = new System.Drawing.Point(190, 114);
+            this.fechaIni.Location = new System.Drawing.Point(135, 87);
             this.fechaIni.Name = "fechaIni";
             this.fechaIni.Size = new System.Drawing.Size(200, 20);
             this.fechaIni.TabIndex = 3;
             // 
             // fechaFin
             // 
-            this.fechaFin.Location = new System.Drawing.Point(190, 144);
+            this.fechaFin.Location = new System.Drawing.Point(135, 117);
             this.fechaFin.Name = "fechaFin";
             this.fechaFin.Size = new System.Drawing.Size(200, 20);
             this.fechaFin.TabIndex = 4;
@@ -193,14 +192,14 @@
             // cod
             // 
             this.cod.BackColor = System.Drawing.SystemColors.Window;
-            this.cod.Location = new System.Drawing.Point(190, 56);
+            this.cod.Location = new System.Drawing.Point(135, 29);
             this.cod.Name = "cod";
             this.cod.Size = new System.Drawing.Size(120, 20);
             this.cod.TabIndex = 1;
             // 
             // codCli
             // 
-            this.codCli.Location = new System.Drawing.Point(190, 296);
+            this.codCli.Location = new System.Drawing.Point(135, 269);
             this.codCli.Name = "codCli";
             this.codCli.Size = new System.Drawing.Size(120, 20);
             this.codCli.TabIndex = 9;
@@ -208,7 +207,7 @@
             // presuFin
             // 
             this.presuFin.DecimalPlaces = 2;
-            this.presuFin.Location = new System.Drawing.Point(190, 236);
+            this.presuFin.Location = new System.Drawing.Point(135, 209);
             this.presuFin.Maximum = new decimal(new int[] {
             1874919423,
             2328306,
@@ -221,7 +220,7 @@
             // presuIni
             // 
             this.presuIni.DecimalPlaces = 2;
-            this.presuIni.Location = new System.Drawing.Point(190, 205);
+            this.presuIni.Location = new System.Drawing.Point(135, 178);
             this.presuIni.Maximum = new decimal(new int[] {
             1874919423,
             2328306,
@@ -233,7 +232,7 @@
             // 
             // b1
             // 
-            this.b1.Location = new System.Drawing.Point(152, 347);
+            this.b1.Location = new System.Drawing.Point(126, 333);
             this.b1.Name = "b1";
             this.b1.Size = new System.Drawing.Size(75, 23);
             this.b1.TabIndex = 10;
@@ -253,13 +252,13 @@
             this.imageList2.ImageSize = new System.Drawing.Size(16, 16);
             this.imageList2.TransparentColor = System.Drawing.Color.Transparent;
             // 
-            // nuevo_proyecto
+            // FrmNuevoProyecto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(723, 389);
+            this.ClientSize = new System.Drawing.Size(339, 368);
             this.Controls.Add(this.b1);
             this.Controls.Add(this.presuIni);
             this.Controls.Add(this.presuFin);
@@ -279,7 +278,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label122);
-            this.Name = "nuevo_proyecto";
+            this.Name = "FrmNuevoProyecto";
             this.Text = "nuevo_proyecto";
             ((System.ComponentModel.ISupportInitialize)(this.cod)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.codCli)).EndInit();

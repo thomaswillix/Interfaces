@@ -1,6 +1,6 @@
 ﻿namespace Practica1
 {
-    partial class Login
+    partial class FrmLogin
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLogin));
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.accept = new System.Windows.Forms.Button();
             this.cancel = new System.Windows.Forms.Button();

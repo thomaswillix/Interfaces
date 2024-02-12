@@ -15,7 +15,7 @@ namespace Practica1
             cierre la app si se cierra el primer form.*/
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Login login = new Login();
+            FrmLogin login = new FrmLogin();
             login.Show();
             Application.Run();
         }

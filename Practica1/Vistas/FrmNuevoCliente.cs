@@ -339,5 +339,10 @@ namespace Practica1.Vistas
                 }
             }
         }
+
+        private void toolTip1_Popup(object sender, PopupEventArgs e)
+        {
+
+        }
     }
 }

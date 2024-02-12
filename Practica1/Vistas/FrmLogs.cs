@@ -12,10 +12,10 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Practica1.Vistas
 {
-    public partial class Logs : Form
+    public partial class FrmLogs : Form
     {
         public string directorio = "";
-        public Logs()
+        public FrmLogs()
         {
             InitializeComponent();
         }

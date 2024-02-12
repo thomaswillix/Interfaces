@@ -1,6 +1,6 @@
 ﻿namespace Practica1.Vistas
 {
-    partial class Logs
+    partial class FrmLogs
     {
         /// <summary>
         /// Required designer variable.

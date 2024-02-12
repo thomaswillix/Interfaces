@@ -63,7 +63,8 @@
             // 
             // b1
             // 
-            this.b1.Location = new System.Drawing.Point(86, 364);
+            this.b1.ForeColor = System.Drawing.Color.Black;
+            this.b1.Location = new System.Drawing.Point(171, 365);
             this.b1.Name = "b1";
             this.b1.Size = new System.Drawing.Size(75, 23);
             this.b1.TabIndex = 11;
@@ -255,7 +256,8 @@
             // 
             // bt2
             // 
-            this.bt2.Location = new System.Drawing.Point(506, 181);
+            this.bt2.ForeColor = System.Drawing.Color.Black;
+            this.bt2.Location = new System.Drawing.Point(284, 155);
             this.bt2.Name = "bt2";
             this.bt2.Size = new System.Drawing.Size(126, 23);
             this.bt2.TabIndex = 12;
@@ -267,9 +269,9 @@
             // 
             this.wb.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("wb.BackgroundImage")));
             this.wb.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.wb.Location = new System.Drawing.Point(394, 38);
+            this.wb.Location = new System.Drawing.Point(282, 12);
             this.wb.Name = "wb";
-            this.wb.Size = new System.Drawing.Size(337, 135);
+            this.wb.Size = new System.Drawing.Size(138, 137);
             this.wb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.wb.TabIndex = 54;
             this.wb.TabStop = false;
@@ -277,11 +279,12 @@
             // 
             // esc
             // 
-            this.esc.Location = new System.Drawing.Point(523, 227);
+            this.esc.ForeColor = System.Drawing.Color.Black;
+            this.esc.Location = new System.Drawing.Point(302, 184);
             this.esc.Name = "esc";
             this.esc.Size = new System.Drawing.Size(88, 23);
             this.esc.TabIndex = 13;
-            this.esc.Text = "Escondelo porfi";
+            this.esc.Text = "Escondelo";
             this.esc.UseVisualStyleBackColor = true;
             this.esc.Click += new System.EventHandler(this.esc_Click);
             // 
@@ -318,9 +321,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(721, 418);
+            this.ClientSize = new System.Drawing.Size(432, 400);
             this.Controls.Add(this.dni);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.puesto);
@@ -347,6 +350,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label122);
+            this.ForeColor = System.Drawing.Color.White;
             this.Name = "FrmNuevoEmpleado";
             this.Text = "nuevo_empleado";
             this.Load += new System.EventHandler(this.FrmNuevoEmpleado_Load);

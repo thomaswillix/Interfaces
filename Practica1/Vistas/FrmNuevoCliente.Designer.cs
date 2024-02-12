@@ -48,6 +48,9 @@
             this.direccion = new System.Windows.Forms.TextBox();
             this.di = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.btnExportar = new System.Windows.Forms.Button();
+            this.fuentercb = new System.Windows.Forms.Button();
+            this.colorrcb = new System.Windows.Forms.Button();
             this.coments = new System.Windows.Forms.RichTextBox();
             this.descuento = new System.Windows.Forms.NumericUpDown();
             this.textlabes = new System.Windows.Forms.Label();
@@ -72,9 +75,7 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
-            this.colorrcb = new System.Windows.Forms.Button();
-            this.fuentercb = new System.Windows.Forms.Button();
-            this.btnExportar = new System.Windows.Forms.Button();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -285,6 +286,36 @@
             this.tabPage2.Text = "Datos Privados";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // btnExportar
+            // 
+            this.btnExportar.Location = new System.Drawing.Point(28, 259);
+            this.btnExportar.Name = "btnExportar";
+            this.btnExportar.Size = new System.Drawing.Size(67, 23);
+            this.btnExportar.TabIndex = 9;
+            this.btnExportar.Text = "Exportar";
+            this.btnExportar.UseVisualStyleBackColor = true;
+            this.btnExportar.Click += new System.EventHandler(this.btnExportar_Click);
+            // 
+            // fuentercb
+            // 
+            this.fuentercb.Location = new System.Drawing.Point(414, 197);
+            this.fuentercb.Name = "fuentercb";
+            this.fuentercb.Size = new System.Drawing.Size(79, 23);
+            this.fuentercb.TabIndex = 8;
+            this.fuentercb.Text = "Fuente";
+            this.fuentercb.UseVisualStyleBackColor = true;
+            this.fuentercb.Click += new System.EventHandler(this.fuentercb_Click);
+            // 
+            // colorrcb
+            // 
+            this.colorrcb.Location = new System.Drawing.Point(518, 197);
+            this.colorrcb.Name = "colorrcb";
+            this.colorrcb.Size = new System.Drawing.Size(79, 23);
+            this.colorrcb.TabIndex = 7;
+            this.colorrcb.Text = "Color";
+            this.colorrcb.UseVisualStyleBackColor = true;
+            this.colorrcb.Click += new System.EventHandler(this.colorrcb_Click);
+            // 
             // coments
             // 
             this.coments.Location = new System.Drawing.Point(112, 226);
@@ -485,35 +516,9 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // colorrcb
+            // toolTip1
             // 
-            this.colorrcb.Location = new System.Drawing.Point(518, 197);
-            this.colorrcb.Name = "colorrcb";
-            this.colorrcb.Size = new System.Drawing.Size(79, 23);
-            this.colorrcb.TabIndex = 7;
-            this.colorrcb.Text = "Color";
-            this.colorrcb.UseVisualStyleBackColor = true;
-            this.colorrcb.Click += new System.EventHandler(this.colorrcb_Click);
-            // 
-            // fuentercb
-            // 
-            this.fuentercb.Location = new System.Drawing.Point(414, 197);
-            this.fuentercb.Name = "fuentercb";
-            this.fuentercb.Size = new System.Drawing.Size(79, 23);
-            this.fuentercb.TabIndex = 8;
-            this.fuentercb.Text = "Fuente";
-            this.fuentercb.UseVisualStyleBackColor = true;
-            this.fuentercb.Click += new System.EventHandler(this.fuentercb_Click);
-            // 
-            // btnExportar
-            // 
-            this.btnExportar.Location = new System.Drawing.Point(28, 259);
-            this.btnExportar.Name = "btnExportar";
-            this.btnExportar.Size = new System.Drawing.Size(67, 23);
-            this.btnExportar.TabIndex = 9;
-            this.btnExportar.Text = "Exportar";
-            this.btnExportar.UseVisualStyleBackColor = true;
-            this.btnExportar.Click += new System.EventHandler(this.btnExportar_Click);
+            this.toolTip1.Popup += new System.Windows.Forms.PopupEventHandler(this.toolTip1_Popup);
             // 
             // FrmNuevoCliente
             // 
@@ -590,5 +595,6 @@
         private System.Windows.Forms.Button colorrcb;
         private System.Windows.Forms.Button fuentercb;
         private System.Windows.Forms.Button btnExportar;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

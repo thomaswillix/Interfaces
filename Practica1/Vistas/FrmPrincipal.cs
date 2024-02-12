@@ -11,9 +11,9 @@ using Practica1.Vistas;
 
 namespace Practica1
 {
-    public partial class Principal : Form
+    public partial class FrmPrincipal : Form
     {
-        public Principal()
+        public FrmPrincipal()
         {
             InitializeComponent();
 
@@ -91,7 +91,7 @@ namespace Practica1
 
             if (folderBrowserDialog.ShowDialog() == DialogResult.OK)
             {
-                Logs logs = new Logs();
+                FrmLogs logs = new FrmLogs();
                 //propiedad pública del formulario log
                 logs.directorio = folderBrowserDialog.SelectedPath;
                 logs.ShowDialog();
@@ -99,6 +99,11 @@ namespace Practica1
         }
 
         private void logsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
 
         }
