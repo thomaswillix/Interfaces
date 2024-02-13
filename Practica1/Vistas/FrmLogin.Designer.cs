@@ -42,6 +42,7 @@
             this.disclaimer = new System.Windows.Forms.Label();
             this.IblError = new System.Windows.Forms.Label();
             this.btReg = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,33 +52,39 @@
             // 
             // accept
             // 
+            this.accept.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.accept.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.accept.Location = new System.Drawing.Point(410, 211);
+            this.accept.ForeColor = System.Drawing.SystemColors.Menu;
+            this.accept.Location = new System.Drawing.Point(374, 187);
             this.accept.Name = "accept";
             this.accept.Size = new System.Drawing.Size(75, 23);
-            this.accept.TabIndex = 0;
+            this.accept.TabIndex = 4;
             this.accept.Text = "Aceptar";
-            this.accept.UseVisualStyleBackColor = true;
+            this.accept.UseVisualStyleBackColor = false;
             this.accept.Click += new System.EventHandler(this.button1_Click);
             // 
             // cancel
             // 
+            this.cancel.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.cancel.Location = new System.Drawing.Point(298, 211);
+            this.cancel.ForeColor = System.Drawing.SystemColors.Menu;
+            this.cancel.Location = new System.Drawing.Point(262, 187);
             this.cancel.Name = "cancel";
             this.cancel.Size = new System.Drawing.Size(75, 23);
-            this.cancel.TabIndex = 1;
+            this.cancel.TabIndex = 3;
             this.cancel.Text = "Cancelar";
-            this.cancel.UseVisualStyleBackColor = true;
+            this.cancel.UseVisualStyleBackColor = false;
             this.cancel.Click += new System.EventHandler(this.button2_Click);
             // 
             // enlace
             // 
             this.enlace.AutoSize = true;
-            this.enlace.Location = new System.Drawing.Point(72, 176);
+            this.enlace.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.enlace.LinkColor = System.Drawing.Color.White;
+            this.enlace.Location = new System.Drawing.Point(36, 150);
             this.enlace.Name = "enlace";
             this.enlace.Size = new System.Drawing.Size(83, 13);
-            this.enlace.TabIndex = 2;
+            this.enlace.TabIndex = 6;
             this.enlace.TabStop = true;
             this.enlace.Text = "Enlace a la web";
             this.enlace.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
@@ -85,8 +92,10 @@
             // usuario
             // 
             this.usuario.AutoSize = true;
+            this.usuario.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.usuario.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.usuario.Location = new System.Drawing.Point(249, 122);
+            this.usuario.ForeColor = System.Drawing.SystemColors.Window;
+            this.usuario.Location = new System.Drawing.Point(213, 98);
             this.usuario.Name = "usuario";
             this.usuario.Size = new System.Drawing.Size(69, 19);
             this.usuario.TabIndex = 3;
@@ -95,8 +104,9 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(48, 38);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(137, 135);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -106,18 +116,22 @@
             // 
             // cuadroUsu
             // 
+            this.cuadroUsu.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.cuadroUsu.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cuadroUsu.Location = new System.Drawing.Point(344, 122);
+            this.cuadroUsu.ForeColor = System.Drawing.SystemColors.Window;
+            this.cuadroUsu.Location = new System.Drawing.Point(308, 98);
             this.cuadroUsu.Name = "cuadroUsu";
             this.cuadroUsu.Size = new System.Drawing.Size(150, 26);
-            this.cuadroUsu.TabIndex = 5;
+            this.cuadroUsu.TabIndex = 1;
             this.cuadroUsu.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // clave
             // 
             this.clave.AutoSize = true;
+            this.clave.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.clave.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.clave.Location = new System.Drawing.Point(249, 159);
+            this.clave.ForeColor = System.Drawing.SystemColors.Window;
+            this.clave.Location = new System.Drawing.Point(213, 135);
             this.clave.Name = "clave";
             this.clave.Size = new System.Drawing.Size(52, 19);
             this.clave.TabIndex = 6;
@@ -126,37 +140,45 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(424, 211);
+            this.textBox2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.textBox2.ForeColor = System.Drawing.SystemColors.Menu;
+            this.textBox2.Location = new System.Drawing.Point(388, 187);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(0, 20);
             this.textBox2.TabIndex = 7;
             // 
             // cuadroCont
             // 
+            this.cuadroCont.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.cuadroCont.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cuadroCont.Location = new System.Drawing.Point(344, 159);
+            this.cuadroCont.ForeColor = System.Drawing.SystemColors.Window;
+            this.cuadroCont.Location = new System.Drawing.Point(308, 135);
             this.cuadroCont.Name = "cuadroCont";
             this.cuadroCont.PasswordChar = '*';
             this.cuadroCont.Size = new System.Drawing.Size(150, 26);
-            this.cuadroCont.TabIndex = 8;
+            this.cuadroCont.TabIndex = 2;
             this.cuadroCont.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // disclaimer
             // 
             this.disclaimer.AutoSize = true;
-            this.disclaimer.Font = new System.Drawing.Font("MV Boli", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.disclaimer.Location = new System.Drawing.Point(161, 365);
+            this.disclaimer.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.disclaimer.Font = new System.Drawing.Font("Sitka Display", 9.749999F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Strikeout))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.disclaimer.ForeColor = System.Drawing.SystemColors.Window;
+            this.disclaimer.Location = new System.Drawing.Point(192, 295);
             this.disclaimer.Name = "disclaimer";
-            this.disclaimer.Size = new System.Drawing.Size(496, 105);
+            this.disclaimer.Size = new System.Drawing.Size(317, 95);
             this.disclaimer.TabIndex = 9;
             this.disclaimer.Text = resources.GetString("disclaimer.Text");
+            this.disclaimer.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // IblError
             // 
             this.IblError.AutoSize = true;
+            this.IblError.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.IblError.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.IblError.ForeColor = System.Drawing.Color.Red;
-            this.IblError.Location = new System.Drawing.Point(278, 287);
+            this.IblError.Location = new System.Drawing.Point(242, 263);
             this.IblError.Name = "IblError";
             this.IblError.Size = new System.Drawing.Size(221, 19);
             this.IblError.TabIndex = 10;
@@ -166,25 +188,39 @@
             // 
             // btReg
             // 
+            this.btReg.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btReg.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btReg.Location = new System.Drawing.Point(349, 252);
+            this.btReg.ForeColor = System.Drawing.SystemColors.Menu;
+            this.btReg.Location = new System.Drawing.Point(322, 226);
             this.btReg.Name = "btReg";
             this.btReg.Size = new System.Drawing.Size(75, 23);
-            this.btReg.TabIndex = 11;
+            this.btReg.TabIndex = 5;
             this.btReg.Text = "Registrar";
-            this.btReg.UseVisualStyleBackColor = true;
+            this.btReg.UseVisualStyleBackColor = false;
             this.btReg.Click += new System.EventHandler(this.btReg_Click);
             // 
-            // Login
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.Window;
+            this.label1.Location = new System.Drawing.Point(305, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(124, 36);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Gestión";
+            // 
+            // FrmLogin
             // 
             this.AcceptButton = this.accept;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.CancelButton = this.cancel;
-            this.ClientSize = new System.Drawing.Size(807, 411);
+            this.ClientSize = new System.Drawing.Size(677, 399);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btReg);
             this.Controls.Add(this.IblError);
             this.Controls.Add(this.disclaimer);
@@ -200,7 +236,7 @@
             this.Location = new System.Drawing.Point(50, 50);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Login";
+            this.Name = "FrmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GestionaIES";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Login_FormClosing);
@@ -226,6 +262,7 @@
         private System.Windows.Forms.Label disclaimer;
         private System.Windows.Forms.Label IblError;
         private System.Windows.Forms.Button btReg;
+        private System.Windows.Forms.Label label1;
     }
 }
 

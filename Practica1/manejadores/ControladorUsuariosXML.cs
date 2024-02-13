@@ -28,8 +28,8 @@ namespace Practica1.manejadores
                     serializer.Serialize(writer, listaUsuarios, namespaces);
                 }
             }
-            catch (Exception e) {
-                
+            catch (Exception) {
+                Console.WriteLine("Error al escribir el usuairo");
             }
         }
 

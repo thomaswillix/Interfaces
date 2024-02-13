@@ -107,6 +107,12 @@ namespace Practica1
         {
 
         }
+
+        private void componentesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmComponentesProyectos componentes = new FrmComponentesProyectos();
+            componentes.ShowDialog();
+        }
     }
 
 }

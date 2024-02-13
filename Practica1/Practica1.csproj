@@ -92,6 +92,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Manejadores\ControladorClientesXML.cs" />
+    <Compile Include="Manejadores\ControladorComponentesProyecto.cs" />
     <Compile Include="Manejadores\ControladorEmpleadosJSON.cs" />
     <Compile Include="Manejadores\ControladorProyectosBin.cs" />
     <Compile Include="Manejadores\ControladorUsuariosXML.cs" />

@@ -47,7 +47,7 @@ namespace Practica1.Vistas
 
         private void button2_Click(object sender, EventArgs e)
         {
-            groupBox1.Controls.Clear();
+            listBox1.Controls.Clear();
             ordenarProyectos(Proyecto => Proyecto.FechaIni);
             mostrarProyectos();
         }
@@ -65,7 +65,7 @@ namespace Practica1.Vistas
             cb.Size = new System.Drawing.Size(291, 20);
             cb.TabIndex = 1;
             cb.Text = p1.Descripcion;
-            groupBox1.Controls.Add(cb);
+            listBox1.Controls.Add(cb);
         }
 
         private void FrmProyectos_Load(object sender, EventArgs e)
@@ -101,14 +101,14 @@ namespace Practica1.Vistas
 
         private void ordenarNombre_Click(object sender, EventArgs e)
         {
-            groupBox1.Controls.Clear();
+            listBox1.Controls.Clear();
             ordenarProyectos(Proyecto => Proyecto.Descripcion);
             mostrarProyectos();
         }
 
         private void btElim_Click(object sender, EventArgs e)
         {
-            foreach (System.Windows.Forms.CheckBox cd in groupBox1.Controls)
+            foreach (System.Windows.Forms.CheckBox cd in listBox1.Controls)
             {
                 if (cd.Checked)
                 {
@@ -116,13 +116,26 @@ namespace Practica1.Vistas
                     ControladorProyectosBin.listaProyectos.RemoveAt(posicion);
                 }
             }
-            this.groupBox1.Controls.Clear();
+            this.listBox1.Controls.Clear();
             mostrarProyectos();
         }
 
         private void titulo_Click(object sender, EventArgs e)
         {
 
+        }
+
+
+        private void rellenarComboBox()
+        {
+            foreach(Proyecto p in ControladorProyectosBin.listaProyectos)
+            {
+                comboBox1.Text += p.ToString();
+            }
+        }
+        private void FrmComponentesProyectos_Load(object sender, EventArgs e)
+        {
+            rellenarComboBox();
         }
     }
 }

@@ -23,8 +23,9 @@ namespace Practica1.manejadores
                 listaProyectos = (List<Proyecto>)deserializer.Deserialize(OpenFileStream);
                 OpenFileStream.Close();
             }
-            catch (Exception e)
+            catch (Exception)
             {
+                Console.WriteLine("Error al leer los proyectos del archivo binario");
             }
         }
         public static bool escribirProyecto()
@@ -38,8 +39,9 @@ namespace Practica1.manejadores
                 return true;
 
             }
-            catch (Exception e)
+            catch (Exception)
             {
+                Console.WriteLine("Error al escribir la lista de Proyectos mediante el controlador");
                 return false;
             }
         }

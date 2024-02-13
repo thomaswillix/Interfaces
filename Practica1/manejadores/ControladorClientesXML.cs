@@ -29,9 +29,9 @@ namespace Practica1.manejadores
                     serializer.Serialize(writer, listaClientes, namespaces);
                 }
             }
-            catch (Exception e)
+            catch (Exception)
             {
-
+                Console.WriteLine("Error al escribir los clientes mediante el controlador");
             }
         }
 

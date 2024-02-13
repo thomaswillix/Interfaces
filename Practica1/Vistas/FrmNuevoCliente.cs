@@ -332,7 +332,7 @@ namespace Practica1.Vistas
                         coments.SaveFile(saveFileDialog1.FileName);
                         MessageBox.Show("Datos exportados");
                     }
-                    catch (Exception ex)
+                    catch (Exception)
                     {
                         MessageBox.Show("Datos NO exportados");
                     }

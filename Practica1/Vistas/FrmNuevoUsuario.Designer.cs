@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmNuevoUsuario));
             this.b1 = new System.Windows.Forms.Button();
             this.user = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
@@ -38,7 +37,7 @@
             // 
             // b1
             // 
-            this.b1.Location = new System.Drawing.Point(206, 143);
+            this.b1.Location = new System.Drawing.Point(47, 97);
             this.b1.Name = "b1";
             this.b1.Size = new System.Drawing.Size(75, 23);
             this.b1.TabIndex = 3;
@@ -48,7 +47,7 @@
             // 
             // user
             // 
-            this.user.Location = new System.Drawing.Point(72, 56);
+            this.user.Location = new System.Drawing.Point(61, 28);
             this.user.Name = "user";
             this.user.Size = new System.Drawing.Size(100, 20);
             this.user.TabIndex = 1;
@@ -56,7 +55,8 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(21, 59);
+            this.label13.ForeColor = System.Drawing.SystemColors.Control;
+            this.label13.Location = new System.Drawing.Point(10, 31);
             this.label13.Name = "label13";
             this.label13.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label13.Size = new System.Drawing.Size(43, 13);
@@ -65,7 +65,7 @@
             // 
             // pass
             // 
-            this.pass.Location = new System.Drawing.Point(382, 56);
+            this.pass.Location = new System.Drawing.Point(61, 56);
             this.pass.Name = "pass";
             this.pass.Size = new System.Drawing.Size(100, 20);
             this.pass.TabIndex = 2;
@@ -73,26 +73,27 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(342, 59);
+            this.label1.ForeColor = System.Drawing.SystemColors.Control;
+            this.label1.Location = new System.Drawing.Point(11, 59);
             this.label1.Name = "label1";
             this.label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label1.Size = new System.Drawing.Size(34, 13);
             this.label1.TabIndex = 30;
             this.label1.Text = "Clave";
             // 
-            // nuevo_usuario
+            // FrmNuevoUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(494, 178);
+            this.ClientSize = new System.Drawing.Size(182, 155);
             this.Controls.Add(this.pass);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.b1);
             this.Controls.Add(this.user);
             this.Controls.Add(this.label13);
-            this.Name = "nuevo_usuario";
+            this.Name = "FrmNuevoUsuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "nuevo_usuario";
             this.Load += new System.EventHandler(this.nuevo_usuario_Load);

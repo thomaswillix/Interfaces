@@ -279,6 +279,7 @@
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label122);
             this.Name = "FrmNuevoProyecto";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "nuevo_proyecto";
             ((System.ComponentModel.ISupportInitialize)(this.cod)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.codCli)).EndInit();
