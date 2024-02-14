@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
+using Practica1.Modelo;
 
 namespace Practica1.Manejadores
 {
@@ -47,6 +48,9 @@ namespace Practica1.Manejadores
         }
         public static void cargarEmpleados()
         {
+            if (ControladorEmpleadosJSON.listaEmpleados.Contains(new Empleado { Id = idEmpleado }))
+
+                ComponentesProyecto cp = new ComponentesProyecto(1, )
             DateTime d = new DateTime(2002, 2, 3, 13, 0, 0);
             Empleado e = new Empleado(1, "Juan", "Rodriguez", "Perez", "programador", d);
             listaEmpleados.Add(e);

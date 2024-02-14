@@ -201,11 +201,9 @@ C:\Users\thoma\Source\Repos\thomaswillix\Interfaces\Practica1\obj\Debug\Practica
 C:\Users\thoma\Source\Repos\thomaswillix\Interfaces\Practica1\obj\Debug\Practica1.FrmEmpleados.resources
 C:\Users\thoma\Source\Repos\thomaswillix\Interfaces\Practica1\obj\Debug\Practica1.Vistas.FrmNuevoCliente.resources
 C:\Users\thoma\Source\Repos\thomaswillix\Interfaces\Practica1\obj\Debug\Practica1.FrmProyectos.resources
-C:\Users\thoma\Source\Repos\thomaswillix\Interfaces\Practica1\obj\Debug\Practica1.Login.resources
 C:\Users\thoma\Source\Repos\thomaswillix\Interfaces\Practica1\obj\Debug\Practica1.FrmNuevoEmpleado.resources
 C:\Users\thoma\Source\Repos\thomaswillix\Interfaces\Practica1\obj\Debug\Practica1.FrmNuevoProyecto.resources
 C:\Users\thoma\Source\Repos\thomaswillix\Interfaces\Practica1\obj\Debug\Practica1.Vistas.FrmNuevoUsuario.resources
-C:\Users\thoma\Source\Repos\thomaswillix\Interfaces\Practica1\obj\Debug\Practica1.Principal.resources
 C:\Users\thoma\Source\Repos\thomaswillix\Interfaces\Practica1\obj\Debug\Practica1.Properties.Resources.resources
 C:\Users\thoma\Source\Repos\thomaswillix\Interfaces\Practica1\obj\Debug\Practica1.csproj.GenerateResource.cache
 C:\Users\thoma\Source\Repos\thomaswillix\Interfaces\Practica1\obj\Debug\Practica1.csproj.CoreCompileInputs.cache
@@ -241,3 +239,8 @@ C:\Users\Lucía\Source\Repos\thomaswillix\Interfaces\Practica1\obj\Debug\Practic
 C:\Users\Lucía\Source\Repos\thomaswillix\Interfaces\Practica1\obj\Debug\Practica1.FrmLogin.resources
 C:\Users\Lucía\Source\Repos\thomaswillix\Interfaces\Practica1\obj\Debug\Practica1.Vistas.FrmLogs.resources
 C:\Users\Lucía\Source\Repos\thomaswillix\Interfaces\Practica1\obj\Debug\Practica1.FrmPrincipal.resources
+C:\Users\thoma\Source\Repos\thomaswillix\Interfaces\Practica1\obj\Debug\Practica1.Vistas.FrmAcercaDe.resources
+C:\Users\thoma\Source\Repos\thomaswillix\Interfaces\Practica1\obj\Debug\Practica1.Vistas.FrmComponentesProyectos.resources
+C:\Users\thoma\Source\Repos\thomaswillix\Interfaces\Practica1\obj\Debug\Practica1.FrmLogin.resources
+C:\Users\thoma\Source\Repos\thomaswillix\Interfaces\Practica1\obj\Debug\Practica1.Vistas.FrmLogs.resources
+C:\Users\thoma\Source\Repos\thomaswillix\Interfaces\Practica1\obj\Debug\Practica1.FrmPrincipal.resources

@@ -56,6 +56,7 @@
             this.altaToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.modificaciónToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.listadosToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.componentesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ventanaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.organizarHorizontalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.organizarVerticalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -66,7 +67,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.folderBrowserDialog = new System.Windows.Forms.FolderBrowserDialog();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.componentesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -268,22 +268,29 @@
             // altaToolStripMenuItem2
             // 
             this.altaToolStripMenuItem2.Name = "altaToolStripMenuItem2";
-            this.altaToolStripMenuItem2.Size = new System.Drawing.Size(144, 22);
+            this.altaToolStripMenuItem2.Size = new System.Drawing.Size(149, 22);
             this.altaToolStripMenuItem2.Text = "Alta";
             this.altaToolStripMenuItem2.Click += new System.EventHandler(this.altaToolStripMenuItem2_Click);
             // 
             // modificaciónToolStripMenuItem1
             // 
             this.modificaciónToolStripMenuItem1.Name = "modificaciónToolStripMenuItem1";
-            this.modificaciónToolStripMenuItem1.Size = new System.Drawing.Size(144, 22);
+            this.modificaciónToolStripMenuItem1.Size = new System.Drawing.Size(149, 22);
             this.modificaciónToolStripMenuItem1.Text = "Modificación";
             // 
             // listadosToolStripMenuItem2
             // 
             this.listadosToolStripMenuItem2.Name = "listadosToolStripMenuItem2";
-            this.listadosToolStripMenuItem2.Size = new System.Drawing.Size(144, 22);
+            this.listadosToolStripMenuItem2.Size = new System.Drawing.Size(149, 22);
             this.listadosToolStripMenuItem2.Text = "Listados";
             this.listadosToolStripMenuItem2.Click += new System.EventHandler(this.listadosToolStripMenuItem2_Click);
+            // 
+            // componentesToolStripMenuItem
+            // 
+            this.componentesToolStripMenuItem.Name = "componentesToolStripMenuItem";
+            this.componentesToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.componentesToolStripMenuItem.Text = "Componentes";
+            this.componentesToolStripMenuItem.Click += new System.EventHandler(this.componentesToolStripMenuItem_Click);
             // 
             // ventanaToolStripMenuItem
             // 
@@ -325,13 +332,14 @@
             // acercaDeToolStripMenuItem
             // 
             this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
-            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.acercaDeToolStripMenuItem.Text = "Acerca de";
+            this.acercaDeToolStripMenuItem.Click += new System.EventHandler(this.acercaDeToolStripMenuItem_Click);
             // 
             // logsToolStripMenuItem
             // 
             this.logsToolStripMenuItem.Name = "logsToolStripMenuItem";
-            this.logsToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.logsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.logsToolStripMenuItem.Text = "Ver Logs";
             this.logsToolStripMenuItem.Click += new System.EventHandler(this.verLogsToolStripMenuItem_Click);
             // 
@@ -357,13 +365,6 @@
             this.toolStrip1.TabIndex = 3;
             this.toolStrip1.Text = "toolStrip1";
             this.toolStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.toolStrip1_ItemClicked);
-            // 
-            // componentesToolStripMenuItem
-            // 
-            this.componentesToolStripMenuItem.Name = "componentesToolStripMenuItem";
-            this.componentesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.componentesToolStripMenuItem.Text = "Componentes";
-            this.componentesToolStripMenuItem.Click += new System.EventHandler(this.componentesToolStripMenuItem_Click);
             // 
             // FrmPrincipal
             // 

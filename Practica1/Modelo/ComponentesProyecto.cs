@@ -24,21 +24,17 @@ namespace Practica1.Modelo
             this.extras = extras;
         }
 
-        public ComponentesProyecto(string codigoProyecto, int idEmpleado, string puesto, float porcentajeDedicacion)
+        public ComponentesProyecto(int idEmpleado, string puesto, float porcentajeDedicacion)
         {
-            this.codigoProyecto = codigoProyecto;
             this.idEmpleado = idEmpleado;
             this.puesto = puesto;
             this.porcentajeDedicacion = porcentajeDedicacion;
         }
         public bool esJefedeProyecto()
         {
-            foreach (Empleado e in ControladorEmpleadosJSON.listaEmpleados)
+            if (puesto == "jefe de proyecto")
             {
-                if (ControladorEmpleadosJSON.listaEmpleados.Contains(new Empleado { Id = idEmpleado }))
-                {
-                    return e.esJefe();
-                }
+                return true;
             }
             return false;
         }

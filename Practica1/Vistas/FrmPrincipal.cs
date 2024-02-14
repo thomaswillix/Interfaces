@@ -113,6 +113,12 @@ namespace Practica1
             FrmComponentesProyectos componentes = new FrmComponentesProyectos();
             componentes.ShowDialog();
         }
+
+        private void acercaDeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmAcercaDe acercaDe = new FrmAcercaDe();
+            acercaDe.ShowDialog();
+        }
     }
 
 }

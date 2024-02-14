@@ -53,13 +53,13 @@ namespace Practica1.manejadores
             Empleado e = new Empleado(1, "Juan", "Rodriguez", "Perez", "programador", d);
             listaEmpleados.Add(e);
             d = new DateTime(2000, 9, 4, 22, 0, 0);
-            e = new Empleado(1, "Pablo", "Hernandez", "Ortiz", "becario", d);
+            e = new Empleado(2, "Pablo", "Hernandez", "Ortiz", "becario", d);
             listaEmpleados.Add(e);
             d = new DateTime(2005, 6, 2, 7, 0, 0);
-            e = new Empleado(1, "Juana", "Martin", "Soler", "programador", d);
+            e = new Empleado(3, "Juana", "Martin", "Soler", "programador", d);
             listaEmpleados.Add(e);
             d = new DateTime(1997, 8, 2, 12, 0, 0);
-            e = new Empleado(1, "Maria", "Pinar", "Dueñas", "jefe", d);
+            e = new Empleado(4, "Maria", "Pinar", "Dueñas", "jefe", d);
             listaEmpleados.Add(e);
         }
     }
