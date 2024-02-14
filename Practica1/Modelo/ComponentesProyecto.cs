@@ -33,11 +33,18 @@ namespace Practica1.Modelo
         }
         public bool esJefedeProyecto()
         {
-            if (ControladorEmpleadosJSON.listaEmpleados.Contains(new Empleado { Id = idEmpleado}))
+            foreach (Empleado e in ControladorEmpleadosJSON.listaEmpleados)
             {
-                return true;
+                if (ControladorEmpleadosJSON.listaEmpleados.Contains(new Empleado { Id = idEmpleado }))
+                {
+                    return e.esJefe();
+                }
             }
             return false;
+        }
+        public void setPorcentajeDedicacion(float porcentaje)
+        {
+            this.porcentajeDedicacion = porcentaje;
         }
     }
 }
