@@ -134,6 +134,7 @@ namespace Practica1.Vistas
         {
             //ControladorProyectosBin.cargarProyectos();
             //ControladorProyectosBin.escribirProyectos();
+            ControladorEmpleadosJSON.leerEmpleados();
             ControladorProyectosBin.leerProyectos();
             populateCombo();
         }
