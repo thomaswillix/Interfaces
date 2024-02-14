@@ -14,7 +14,7 @@ namespace Practica1.manejadores
     {
         public static List<Proyecto> listaProyectos = new List<Proyecto>();
 
-        public static void leerProyecto()
+        public static void leerProyectos()
         {
             try
             {
@@ -28,7 +28,7 @@ namespace Practica1.manejadores
                 Console.WriteLine("Error al leer los proyectos del archivo binario");
             }
         }
-        public static bool escribirProyecto()
+        public static bool escribirProyectos()
         {
             try
             {
@@ -45,6 +45,7 @@ namespace Practica1.manejadores
                 return false;
             }
         }
+        //Carga de proyectos de prueba
         public static void cargarProyectos()
         {
             DateTime fechaIni = new DateTime(2011, 2, 3, 13, 0, 0);

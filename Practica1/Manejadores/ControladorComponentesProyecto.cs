@@ -12,7 +12,7 @@ namespace Practica1.Manejadores
         public static List<Empleado> listaEmpleados = new List<Empleado>();
         public static List<Proyecto> listaProyectos= new List<Proyecto>();
 
-        public static void leerComponentes()
+        /*public static void leerComponentes()
         {
             try
             {
@@ -59,6 +59,6 @@ namespace Practica1.Manejadores
             d = new DateTime(1997, 8, 2, 12, 0, 0);
             e = new Empleado(1, "Maria", "Pinar", "Dueñas", "jefe", d);
             listaEmpleados.Add(e);
-        }
+        }*/
     }
 }

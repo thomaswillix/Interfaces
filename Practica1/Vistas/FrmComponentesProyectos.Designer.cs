@@ -44,7 +44,7 @@
             // btElim
             // 
             this.btElim.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btElim.Location = new System.Drawing.Point(336, 366);
+            this.btElim.Location = new System.Drawing.Point(477, 385);
             this.btElim.Name = "btElim";
             this.btElim.Size = new System.Drawing.Size(75, 23);
             this.btElim.TabIndex = 13;
@@ -53,7 +53,7 @@
             // 
             // ordenarNombre
             // 
-            this.ordenarNombre.Location = new System.Drawing.Point(193, 327);
+            this.ordenarNombre.Location = new System.Drawing.Point(334, 346);
             this.ordenarNombre.Name = "ordenarNombre";
             this.ordenarNombre.Size = new System.Drawing.Size(133, 23);
             this.ordenarNombre.TabIndex = 12;
@@ -63,7 +63,7 @@
             // botonImprimir
             // 
             this.botonImprimir.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.botonImprimir.Location = new System.Drawing.Point(13, 327);
+            this.botonImprimir.Location = new System.Drawing.Point(154, 346);
             this.botonImprimir.Name = "botonImprimir";
             this.botonImprimir.Size = new System.Drawing.Size(75, 23);
             this.botonImprimir.TabIndex = 10;
@@ -73,7 +73,7 @@
             // ordenarFecha
             // 
             this.ordenarFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ordenarFecha.Location = new System.Drawing.Point(58, 366);
+            this.ordenarFecha.Location = new System.Drawing.Point(199, 385);
             this.ordenarFecha.Name = "ordenarFecha";
             this.ordenarFecha.Size = new System.Drawing.Size(171, 23);
             this.ordenarFecha.TabIndex = 9;
@@ -83,7 +83,7 @@
             // botonCancelar
             // 
             this.botonCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.botonCancelar.Location = new System.Drawing.Point(417, 327);
+            this.botonCancelar.Location = new System.Drawing.Point(558, 346);
             this.botonCancelar.Name = "botonCancelar";
             this.botonCancelar.Size = new System.Drawing.Size(75, 23);
             this.botonCancelar.TabIndex = 8;
@@ -133,7 +133,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(817, 436);
             this.Controls.Add(this.listBox1);

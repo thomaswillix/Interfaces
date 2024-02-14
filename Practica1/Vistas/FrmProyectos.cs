@@ -74,7 +74,7 @@ namespace Practica1
         private void FrmProyectos_Load(object sender, EventArgs e)
         {
             ControladorProyectosBin.cargarProyectos();
-            ControladorProyectosBin.escribirProyecto();
+            ControladorProyectosBin.escribirProyectos();
         }
         private void home_FormClosed(object sender, FormClosedEventArgs e)
         {

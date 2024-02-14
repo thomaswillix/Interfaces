@@ -18,6 +18,7 @@ namespace Practica1
         private bool cambios;
         private int codigoCliente;
 
+
         public Proyecto(int codigo, string descripcion, DateTime fechaIni, DateTime fechaFin, bool estado, double presupuestoIni, double presupuestoAct, bool cambios, int codigoCliente)
         {
             this.Codigo = codigo;
@@ -36,7 +37,10 @@ namespace Practica1
             this.PresupuestoIni = presupuestoIni;
             this.PresupuestoAct = presupuestoAct;
         }
-
+        public override string ToString() 
+        {
+            return this.descripcion.ToString();
+        }
         public int Codigo { get => codigo; set => codigo = value; }
         public string Descripcion { get => descripcion; set => descripcion = value; }
         public DateTime FechaIni { get => fechaIni; set => fechaIni = value; }
@@ -47,5 +51,6 @@ namespace Practica1
         public bool Cambios { get => cambios; set => cambios = value; }
         public int CodigoCliente { get => codigoCliente; set => codigoCliente = value; }
 
+        
     }
 }

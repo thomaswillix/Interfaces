@@ -68,11 +68,6 @@ namespace Practica1.Vistas
             listBox1.Controls.Add(cb);
         }
 
-        private void FrmProyectos_Load(object sender, EventArgs e)
-        {
-            ControladorProyectosBin.cargarProyectos();
-            ControladorProyectosBin.escribirProyecto();
-        }
         private void home_FormClosed(object sender, FormClosedEventArgs e)
         {
             DialogResult dialog = MessageBox.Show("Are you sure you want to really exit ? ",
@@ -125,17 +120,22 @@ namespace Practica1.Vistas
 
         }
 
-
-        private void rellenarComboBox()
+        private void populateCombo()
         {
-            foreach(Proyecto p in ControladorProyectosBin.listaProyectos)
+            comboBox1.Items.Clear();
+
+            foreach (Proyecto p in ControladorProyectosBin.listaProyectos)
             {
-                comboBox1.Text += p.ToString();
+                comboBox1.Items.Add(p.ToString());
             }
         }
+
         private void FrmComponentesProyectos_Load(object sender, EventArgs e)
         {
-            rellenarComboBox();
+            //ControladorProyectosBin.cargarProyectos();
+            //ControladorProyectosBin.escribirProyectos();
+            ControladorProyectosBin.leerProyectos();
+            populateCombo();
         }
     }
 }
