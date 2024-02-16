@@ -105,6 +105,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SampleDatabaseDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\Ejemplos\EjemploImpresion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Ejemplos\EjemploImpresion.Designer.cs">
+      <DependentUpon>EjemploImpresion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\Ejemplos\EjemploOpenForms.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -229,6 +235,9 @@
     <Compile Include="Vistas\Ejemplos\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Vistas\Ejemplos\EjemploImpresion.resx">
+      <DependentUpon>EjemploImpresion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vistas\Ejemplos\EjemploOpenForms.resx">
       <DependentUpon>EjemploOpenForms.cs</DependentUpon>
     </EmbeddedResource>

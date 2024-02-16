@@ -254,3 +254,4 @@ C:\Users\thoma\Source\Repos\thomaswillix\Interfaces\Practica1\obj\Debug\EjemploP
 C:\Users\thoma\Source\Repos\thomaswillix\Interfaces\Practica1\obj\Debug\EjemploPasarParametros.FormularioOrigen.resources
 C:\Users\thoma\Source\Repos\thomaswillix\Interfaces\Practica1\obj\Debug\Practica1.Vistas.MainForm.resources
 C:\Users\thoma\Source\Repos\thomaswillix\Interfaces\Practica1\obj\Debug\Practica1.Vistas.Ejemplos.FrmDataGridView.resources
+C:\Users\thoma\Source\Repos\thomaswillix\Interfaces\Practica1\obj\Debug\Practica1.Vistas.Ejemplos.EjemploImpresion.resources

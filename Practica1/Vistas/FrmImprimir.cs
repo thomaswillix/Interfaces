@@ -104,5 +104,11 @@ namespace Practica1.Vistas
             //dibuja la pantalla en el documento
             e.Graphics.DrawImage(memoryImage, 0, 0);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Ejemplos.EjemploImpresion impresion = new Ejemplos.EjemploImpresion();
+            impresion.ShowDialog();
+        }
     }
 }

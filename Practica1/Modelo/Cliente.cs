@@ -24,13 +24,8 @@ namespace Practica1.Modelo
         private Image logo;
         private DateTime cita;
         private string tipoCli;
-        /*private enum TipoCliente
-        {   
-            Pequenio,
-            Mediano, 
-            Grande,
-            Multinacional
-        }*/
+        
+
         public Cliente(string dni,string nombre, string direccion, string ciudad, Empleado representante, 
             string correo, string cif, string telefono, string pais, string tipoCli, decimal descuento, string comentarios, 
             Image logo, DateTime cita)
@@ -50,7 +45,10 @@ namespace Practica1.Modelo
             this.Cita = cita;
             this.TipoCli = tipoCli;
         }
+
         public Cliente() { }
+
+
 
         public string Dni { get => dni; set => dni = value; }
         public string Direccion { get => direccion; set => direccion = value; }
