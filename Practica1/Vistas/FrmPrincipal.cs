@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Practica1.Vistas;
+using Practica1.Vistas.Ejemplos;
 
 namespace Practica1
 {
@@ -21,6 +22,7 @@ namespace Practica1
 
         private void Principal_Load(object sender, EventArgs e)
         {
+            this.IsMdiContainer = true;
             //Mensaje personalizado para la pestaña principal.
             label2.Text += " " +Usuario.u.User;
 
@@ -115,6 +117,23 @@ namespace Practica1
         {
             FrmImprimir imprimir  = new FrmImprimir();
             imprimir.ShowDialog();
+        }
+
+        private void mDIToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pasarParamsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            EjemploPasarParametros.FormularioOrigen origen = new EjemploPasarParametros.FormularioOrigen();
+            origen.ShowDialog();
+        }
+
+        private void dataGridViewToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmDataGridView gridView = new FrmDataGridView();
+            gridView.ShowDialog();
         }
     }
 

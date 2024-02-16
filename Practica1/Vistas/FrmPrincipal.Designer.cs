@@ -71,6 +71,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.folderBrowserDialog = new System.Windows.Forms.FolderBrowserDialog();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.mDIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pasarParamsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dataGridViewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -84,7 +87,9 @@
             this.proyectosToolStripMenuItem,
             this.ventanaToolStripMenuItem,
             this.ayudaToolStripMenuItem,
-            this.cosasToolStripMenuItem});
+            this.cosasToolStripMenuItem,
+            this.mDIToolStripMenuItem,
+            this.pasarParamsToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -352,7 +357,8 @@
             this.cosasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.splitToolStripMenuItem,
             this.flowLayoutPanelToolStripMenuItem,
-            this.tableLayoutPanelToolStripMenuItem});
+            this.tableLayoutPanelToolStripMenuItem,
+            this.dataGridViewToolStripMenuItem});
             this.cosasToolStripMenuItem.Name = "cosasToolStripMenuItem";
             this.cosasToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
             this.cosasToolStripMenuItem.Text = "Cosas";
@@ -398,6 +404,27 @@
             this.toolStrip1.Size = new System.Drawing.Size(26, 426);
             this.toolStrip1.TabIndex = 3;
             this.toolStrip1.Text = "toolStrip1";
+            // 
+            // mDIToolStripMenuItem
+            // 
+            this.mDIToolStripMenuItem.Name = "mDIToolStripMenuItem";
+            this.mDIToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
+            this.mDIToolStripMenuItem.Text = "MDI";
+            this.mDIToolStripMenuItem.Click += new System.EventHandler(this.mDIToolStripMenuItem_Click);
+            // 
+            // pasarParamsToolStripMenuItem
+            // 
+            this.pasarParamsToolStripMenuItem.Name = "pasarParamsToolStripMenuItem";
+            this.pasarParamsToolStripMenuItem.Size = new System.Drawing.Size(89, 20);
+            this.pasarParamsToolStripMenuItem.Text = "Pasar Params";
+            this.pasarParamsToolStripMenuItem.Click += new System.EventHandler(this.pasarParamsToolStripMenuItem_Click);
+            // 
+            // dataGridViewToolStripMenuItem
+            // 
+            this.dataGridViewToolStripMenuItem.Name = "dataGridViewToolStripMenuItem";
+            this.dataGridViewToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.dataGridViewToolStripMenuItem.Text = "DataGridView";
+            this.dataGridViewToolStripMenuItem.Click += new System.EventHandler(this.dataGridViewToolStripMenuItem_Click);
             // 
             // FrmPrincipal
             // 
@@ -465,5 +492,8 @@
         private System.Windows.Forms.ToolStripMenuItem splitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem flowLayoutPanelToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tableLayoutPanelToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mDIToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pasarParamsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dataGridViewToolStripMenuItem;
     }
 }

@@ -105,28 +105,52 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SampleDatabaseDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\Ejemplos\EjemploOpenForms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Ejemplos\EjemploOpenForms.Designer.cs">
+      <DependentUpon>EjemploOpenForms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Ejemplos\FormularioDestino.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Ejemplos\FormularioDestino.Designer.cs">
+      <DependentUpon>FormularioDestino.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Ejemplos\FormularioOrigen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Ejemplos\FormularioOrigen.Designer.cs">
+      <DependentUpon>FormularioOrigen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\Ejemplos\FrmDataGridView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Ejemplos\FrmDataGridView.Designer.cs">
+      <DependentUpon>FrmDataGridView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\FrmAcercaDe.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Vistas\FrmAcercaDe.Designer.cs">
       <DependentUpon>FrmAcercaDe.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\FrmComponentesProyectos.cs">
+    <Compile Include="Vistas\Listados\FrmComponentesProyectos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\FrmComponentesProyectos.Designer.cs">
+    <Compile Include="Vistas\Listados\FrmComponentesProyectos.Designer.cs">
       <DependentUpon>FrmComponentesProyectos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\FrmEmpleados.cs">
+    <Compile Include="Vistas\Listados\FrmEmpleados.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\FrmEmpleados.Designer.cs">
+    <Compile Include="Vistas\Listados\FrmEmpleados.Designer.cs">
       <DependentUpon>FrmEmpleados.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\FrmFlowLayout.cs">
+    <Compile Include="Vistas\Ejemplos\FrmFlowLayout.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\FrmFlowLayout.Designer.cs">
+    <Compile Include="Vistas\Ejemplos\FrmFlowLayout.Designer.cs">
       <DependentUpon>FrmFlowLayout.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\FrmImprimir.cs">
@@ -135,29 +159,29 @@
     <Compile Include="Vistas\FrmImprimir.Designer.cs">
       <DependentUpon>FrmImprimir.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\FrmNuevoCliente.cs">
+    <Compile Include="Vistas\Creacion\FrmNuevoCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\FrmNuevoCliente.Designer.cs">
+    <Compile Include="Vistas\Creacion\FrmNuevoCliente.Designer.cs">
       <DependentUpon>FrmNuevoCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\FrmNuevoEmpleado.cs">
+    <Compile Include="Vistas\Creacion\FrmNuevoEmpleado.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\FrmNuevoEmpleado.Designer.cs">
+    <Compile Include="Vistas\Creacion\FrmNuevoEmpleado.Designer.cs">
       <DependentUpon>FrmNuevoEmpleado.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\FrmNuevoProyecto.cs">
+    <Compile Include="Vistas\Creacion\FrmNuevoProyecto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\FrmNuevoProyecto.Designer.cs">
+    <Compile Include="Vistas\Creacion\FrmNuevoProyecto.Designer.cs">
       <DependentUpon>FrmNuevoProyecto.cs</DependentUpon>
     </Compile>
     <Compile Include="Modelo\Proyecto.cs" />
-    <Compile Include="Vistas\FrmProyectos.cs">
+    <Compile Include="Vistas\Listados\FrmProyectos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\FrmProyectos.Designer.cs">
+    <Compile Include="Vistas\Listados\FrmProyectos.Designer.cs">
       <DependentUpon>FrmProyectos.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\FrmLogin.cs">
@@ -166,10 +190,10 @@
     <Compile Include="Vistas\FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\FrmNuevoUsuario.cs">
+    <Compile Include="Vistas\Creacion\FrmNuevoUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\FrmNuevoUsuario.Designer.cs">
+    <Compile Include="Vistas\Creacion\FrmNuevoUsuario.Designer.cs">
       <DependentUpon>FrmNuevoUsuario.cs</DependentUpon>
     </Compile>
     <Compile Include="Vistas\FrmLogs.cs">
@@ -187,49 +211,67 @@
     <Compile Include="Modelo\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Modelo\Usuario.cs" />
-    <Compile Include="Vistas\FrmSplitContainer.cs">
+    <Compile Include="Vistas\Ejemplos\FrmSplitContainer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\FrmSplitContainer.Designer.cs">
+    <Compile Include="Vistas\Ejemplos\FrmSplitContainer.Designer.cs">
       <DependentUpon>FrmSplitContainer.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vistas\FrmTableLayout.cs">
+    <Compile Include="Vistas\Ejemplos\FrmTableLayout.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vistas\FrmTableLayout.Designer.cs">
+    <Compile Include="Vistas\Ejemplos\FrmTableLayout.Designer.cs">
       <DependentUpon>FrmTableLayout.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\Ejemplos\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\Ejemplos\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Vistas\Ejemplos\EjemploOpenForms.resx">
+      <DependentUpon>EjemploOpenForms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Ejemplos\FormularioDestino.resx">
+      <DependentUpon>FormularioDestino.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Ejemplos\FormularioOrigen.resx">
+      <DependentUpon>FormularioOrigen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Ejemplos\FrmDataGridView.resx">
+      <DependentUpon>FrmDataGridView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vistas\FrmAcercaDe.resx">
       <DependentUpon>FrmAcercaDe.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\FrmComponentesProyectos.resx">
+    <EmbeddedResource Include="Vistas\Listados\FrmComponentesProyectos.resx">
       <DependentUpon>FrmComponentesProyectos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\FrmEmpleados.resx">
+    <EmbeddedResource Include="Vistas\Listados\FrmEmpleados.resx">
       <DependentUpon>FrmEmpleados.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\FrmFlowLayout.resx">
+    <EmbeddedResource Include="Vistas\Ejemplos\FrmFlowLayout.resx">
       <DependentUpon>FrmFlowLayout.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\FrmImprimir.resx">
       <DependentUpon>FrmImprimir.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\FrmNuevoCliente.resx">
+    <EmbeddedResource Include="Vistas\Creacion\FrmNuevoCliente.resx">
       <DependentUpon>FrmNuevoCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\FrmProyectos.resx">
+    <EmbeddedResource Include="Vistas\Listados\FrmProyectos.resx">
       <DependentUpon>FrmProyectos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\FrmNuevoEmpleado.resx">
+    <EmbeddedResource Include="Vistas\Creacion\FrmNuevoEmpleado.resx">
       <DependentUpon>FrmNuevoEmpleado.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\FrmNuevoProyecto.resx">
+    <EmbeddedResource Include="Vistas\Creacion\FrmNuevoProyecto.resx">
       <DependentUpon>FrmNuevoProyecto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\FrmNuevoUsuario.resx">
+    <EmbeddedResource Include="Vistas\Creacion\FrmNuevoUsuario.resx">
       <DependentUpon>FrmNuevoUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\FrmLogs.resx">
@@ -247,11 +289,14 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Vistas\FrmSplitContainer.resx">
+    <EmbeddedResource Include="Vistas\Ejemplos\FrmSplitContainer.resx">
       <DependentUpon>FrmSplitContainer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vistas\FrmTableLayout.resx">
+    <EmbeddedResource Include="Vistas\Ejemplos\FrmTableLayout.resx">
       <DependentUpon>FrmTableLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\Ejemplos\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
