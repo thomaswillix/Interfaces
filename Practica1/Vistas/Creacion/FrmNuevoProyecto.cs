@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Practica1.Manejadores;
 
+
 namespace Practica1
 {
     public partial class FrmNuevoProyecto : Form
@@ -92,10 +93,32 @@ namespace Practica1
 
         private void aniadirProyecto()
         {
+            string est;
+            string cam;
+            if (estado.Checked)
+            {
+                est = "true";
+            }
+            else
+            {
+                est = "false";
+            }
+            if (cambios.Checked)
+            {
+                cam = "true";
+            }
+            else
+            {
+                cam = "false";
+            }
             ControladorProyectosBin.listaProyectos.Add(new Proyecto((int)cod.Value, desc.Text, fechaIni.Value,
                 fechaFin.Value, estado.Checked, (Double)presuIni.Value, (Double)presuFin.Value,
                 cambios.Checked, (int)codCli.Value));
             ControladorProyectosBin.escribirProyectos();
+            Modelo.Database db = new Modelo.Database();
+            db.insertarProyecto(desc.Text, fechaIni.Value.ToString(),
+                fechaFin.Value.ToString(), est, (Double)presuIni.Value, (Double)presuFin.Value,
+                cam, codCli.Value.ToString());
         }
 
         private void b1_Click(object sender, EventArgs e)

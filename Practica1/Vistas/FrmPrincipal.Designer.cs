@@ -68,12 +68,13 @@
             this.splitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.flowLayoutPanelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tableLayoutPanelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dataGridViewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mDIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pasarParamsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label2 = new System.Windows.Forms.Label();
             this.folderBrowserDialog = new System.Windows.Forms.FolderBrowserDialog();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.mDIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pasarParamsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.dataGridViewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dataGridViewsBBDDToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -112,7 +113,7 @@
             this.empleadoToolStripMenuItem,
             this.jefeDeEmpleadoToolStripMenuItem});
             this.agregarToolStripMenuItem.Name = "agregarToolStripMenuItem";
-            this.agregarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.agregarToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
             this.agregarToolStripMenuItem.Text = "Agregar";
             // 
             // empleadoToolStripMenuItem
@@ -130,14 +131,14 @@
             // imprimirToolStripMenuItem
             // 
             this.imprimirToolStripMenuItem.Name = "imprimirToolStripMenuItem";
-            this.imprimirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.imprimirToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
             this.imprimirToolStripMenuItem.Text = "Imprimir";
             this.imprimirToolStripMenuItem.Click += new System.EventHandler(this.imprimirToolStripMenuItem_Click);
             // 
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
@@ -341,14 +342,14 @@
             // acercaDeToolStripMenuItem
             // 
             this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
-            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.acercaDeToolStripMenuItem.Text = "Acerca de";
             this.acercaDeToolStripMenuItem.Click += new System.EventHandler(this.acercaDeToolStripMenuItem_Click);
             // 
             // logsToolStripMenuItem
             // 
             this.logsToolStripMenuItem.Name = "logsToolStripMenuItem";
-            this.logsToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.logsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.logsToolStripMenuItem.Text = "Ver Logs";
             this.logsToolStripMenuItem.Click += new System.EventHandler(this.verLogsToolStripMenuItem_Click);
             // 
@@ -358,7 +359,8 @@
             this.splitToolStripMenuItem,
             this.flowLayoutPanelToolStripMenuItem,
             this.tableLayoutPanelToolStripMenuItem,
-            this.dataGridViewToolStripMenuItem});
+            this.dataGridViewToolStripMenuItem,
+            this.dataGridViewsBBDDToolStripMenuItem});
             this.cosasToolStripMenuItem.Name = "cosasToolStripMenuItem";
             this.cosasToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
             this.cosasToolStripMenuItem.Text = "Cosas";
@@ -366,23 +368,44 @@
             // splitToolStripMenuItem
             // 
             this.splitToolStripMenuItem.Name = "splitToolStripMenuItem";
-            this.splitToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
+            this.splitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.splitToolStripMenuItem.Text = "SplitContainer";
             this.splitToolStripMenuItem.Click += new System.EventHandler(this.splitContainerToolStripMenuItem_Click);
             // 
             // flowLayoutPanelToolStripMenuItem
             // 
             this.flowLayoutPanelToolStripMenuItem.Name = "flowLayoutPanelToolStripMenuItem";
-            this.flowLayoutPanelToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
+            this.flowLayoutPanelToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.flowLayoutPanelToolStripMenuItem.Text = "FlowLayoutPanel";
             this.flowLayoutPanelToolStripMenuItem.Click += new System.EventHandler(this.flowLayoutPanelToolStripMenuItem_Click);
             // 
             // tableLayoutPanelToolStripMenuItem
             // 
             this.tableLayoutPanelToolStripMenuItem.Name = "tableLayoutPanelToolStripMenuItem";
-            this.tableLayoutPanelToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
+            this.tableLayoutPanelToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.tableLayoutPanelToolStripMenuItem.Text = "TableLayoutPanel";
             this.tableLayoutPanelToolStripMenuItem.Click += new System.EventHandler(this.tableLayoutPanelToolStripMenuItem_Click);
+            // 
+            // dataGridViewToolStripMenuItem
+            // 
+            this.dataGridViewToolStripMenuItem.Name = "dataGridViewToolStripMenuItem";
+            this.dataGridViewToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.dataGridViewToolStripMenuItem.Text = "DataGridView";
+            this.dataGridViewToolStripMenuItem.Click += new System.EventHandler(this.dataGridViewToolStripMenuItem_Click);
+            // 
+            // mDIToolStripMenuItem
+            // 
+            this.mDIToolStripMenuItem.Name = "mDIToolStripMenuItem";
+            this.mDIToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
+            this.mDIToolStripMenuItem.Text = "MDI";
+            this.mDIToolStripMenuItem.Click += new System.EventHandler(this.mDIToolStripMenuItem_Click);
+            // 
+            // pasarParamsToolStripMenuItem
+            // 
+            this.pasarParamsToolStripMenuItem.Name = "pasarParamsToolStripMenuItem";
+            this.pasarParamsToolStripMenuItem.Size = new System.Drawing.Size(89, 20);
+            this.pasarParamsToolStripMenuItem.Text = "Pasar Params";
+            this.pasarParamsToolStripMenuItem.Click += new System.EventHandler(this.pasarParamsToolStripMenuItem_Click);
             // 
             // label2
             // 
@@ -405,26 +428,12 @@
             this.toolStrip1.TabIndex = 3;
             this.toolStrip1.Text = "toolStrip1";
             // 
-            // mDIToolStripMenuItem
+            // dataGridViewsBBDDToolStripMenuItem
             // 
-            this.mDIToolStripMenuItem.Name = "mDIToolStripMenuItem";
-            this.mDIToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
-            this.mDIToolStripMenuItem.Text = "MDI";
-            this.mDIToolStripMenuItem.Click += new System.EventHandler(this.mDIToolStripMenuItem_Click);
-            // 
-            // pasarParamsToolStripMenuItem
-            // 
-            this.pasarParamsToolStripMenuItem.Name = "pasarParamsToolStripMenuItem";
-            this.pasarParamsToolStripMenuItem.Size = new System.Drawing.Size(89, 20);
-            this.pasarParamsToolStripMenuItem.Text = "Pasar Params";
-            this.pasarParamsToolStripMenuItem.Click += new System.EventHandler(this.pasarParamsToolStripMenuItem_Click);
-            // 
-            // dataGridViewToolStripMenuItem
-            // 
-            this.dataGridViewToolStripMenuItem.Name = "dataGridViewToolStripMenuItem";
-            this.dataGridViewToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.dataGridViewToolStripMenuItem.Text = "DataGridView";
-            this.dataGridViewToolStripMenuItem.Click += new System.EventHandler(this.dataGridViewToolStripMenuItem_Click);
+            this.dataGridViewsBBDDToolStripMenuItem.Name = "dataGridViewsBBDDToolStripMenuItem";
+            this.dataGridViewsBBDDToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.dataGridViewsBBDDToolStripMenuItem.Text = "DataGridViewsBBDD";
+            this.dataGridViewsBBDDToolStripMenuItem.Click += new System.EventHandler(this.dataGridViewsBBDDToolStripMenuItem_Click);
             // 
             // FrmPrincipal
             // 
@@ -495,5 +504,6 @@
         private System.Windows.Forms.ToolStripMenuItem mDIToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pasarParamsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem dataGridViewToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dataGridViewsBBDDToolStripMenuItem;
     }
 }

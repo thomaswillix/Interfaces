@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Practica1.Vistas;
 using Practica1.Vistas.Ejemplos;
+using Practica1.Vistas.Listados;
 
 namespace Practica1
 {
@@ -134,6 +135,12 @@ namespace Practica1
         {
             FrmDataGridView gridView = new FrmDataGridView();
             gridView.ShowDialog();
+        }
+
+        private void dataGridViewsBBDDToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmProyectosConDataGridView frmProyectos = new FrmProyectosConDataGridView();
+            frmProyectos.ShowDialog();
         }
     }
 
