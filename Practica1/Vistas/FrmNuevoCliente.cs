@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Practica1.manejadores;
+using Practica1.Manejadores;
 using Practica1.Modelo;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
@@ -259,9 +259,11 @@ namespace Practica1.Vistas
 
         private void validarTodas()
         {
-            if(validarTab1() && validarTab2() && validarTab3() && validarTab4())
+            if(validarTab1() && validarTab2() && validarTab3())
             {
                 crearCliente();
+                MessageBox.Show("Cliente creado con éxito");
+                this.Close();
             }
             else
             {
@@ -289,6 +291,7 @@ namespace Practica1.Vistas
             Cliente c = new Cliente(cif.Text, nom.Text, direccion.Text, ciudad.Text, e, correo.Text,
                 cif.Text, telefono.Text, pais.Text, rb.Text, descuento.Value, coments.Text,
                 pictureBox1.Image, dateTimePicker1.Value);
+            ControladorClientesXML.cargarClientesXML();
             ControladorClientesXML.listaClientes.Add(c);
             ControladorClientesXML.escribirClientesXML();
         }

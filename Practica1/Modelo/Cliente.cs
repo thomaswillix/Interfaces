@@ -50,6 +50,7 @@ namespace Practica1.Modelo
             this.Cita = cita;
             this.TipoCli = tipoCli;
         }
+        public Cliente() { }
 
         public string Dni { get => dni; set => dni = value; }
         public string Direccion { get => direccion; set => direccion = value; }
@@ -65,5 +66,13 @@ namespace Practica1.Modelo
         public DateTime Cita { get => cita; set => cita = value; }
         public string TipoCli { get => tipoCli; set => tipoCli = value; }
         public string Nombre { get => nombre; set => nombre = value; }
+
+        public override string ToString()
+        {
+            return $"Nombre del Cliente: {Nombre}, DNI: {Dni}, Teléfono: {telefono}, \n Dirección: {direccion}, Ciudad: {ciudad}, País: {pais}, \n" +
+                   $"Nombre del Representante: {representante.Nombre}, Logo: {logo}, Tipo: {TipoCli}, \nCorreo: {correo}, Comentarios: {comentarios}, \n" +
+                   $"Descuento: {descuento}, Próxima Cita: {Cita}";
+        }
     }
+    
 }

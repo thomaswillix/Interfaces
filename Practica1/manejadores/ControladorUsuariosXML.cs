@@ -8,7 +8,7 @@ using System.Windows.Forms;
 using System.Xml.Serialization;
 using System.IO;
 
-namespace Practica1.manejadores
+namespace Practica1.Manejadores
 {
     //Importante que los métodos de las clases controladoras y las clases sean public y static
     public static class ControladorUsuariosXML

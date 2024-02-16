@@ -9,7 +9,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button.CheckBox;
-using Practica1.manejadores;
 using Practica1.Manejadores;
 
 namespace Practica1

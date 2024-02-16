@@ -3,7 +3,6 @@ using System.Drawing.Text;
 using System.Security.Permissions;
 using System.Windows.Forms;
 using Practica1.Manejadores;
-using Practica1.manejadores;
 using Practica1.Vistas;
 
 namespace Practica1

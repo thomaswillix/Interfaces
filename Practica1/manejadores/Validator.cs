@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing;
 
-namespace Practica1.manejadores
+namespace Practica1.Manejadores
 {
     public class Validator 
     {

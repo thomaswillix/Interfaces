@@ -30,18 +30,6 @@ namespace Practica1
                 logsToolStripMenuItem.Visible = true;
             }
         }
-        private void Principal_FormClosing(object sender,FormClosingEventArgs e)
-        {
-        }
-        private void modificacionToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void facturacionToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void listadosToolStripMenuItem2_Click(object sender, EventArgs e)
         {
@@ -65,11 +53,6 @@ namespace Practica1
         {
             FrmNuevoEmpleado empl = new FrmNuevoEmpleado();
             empl.ShowDialog();
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void altaToolStripMenuItem_Click(object sender, EventArgs e)
@@ -98,16 +81,6 @@ namespace Practica1
             }
         }
 
-        private void logsToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
-        }
-
         private void componentesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FrmComponentesProyectos componentes = new FrmComponentesProyectos();
@@ -118,6 +91,30 @@ namespace Practica1
         {
             FrmAcercaDe acercaDe = new FrmAcercaDe();
             acercaDe.ShowDialog();
+        }
+
+        private void splitContainerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmSplitContainer splitCon = new FrmSplitContainer();
+            splitCon.ShowDialog();
+        }
+
+        private void flowLayoutPanelToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmFlowLayout flowLayout = new FrmFlowLayout();
+            flowLayout.ShowDialog();
+        }
+
+        private void tableLayoutPanelToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmTableLayout tableLayout = new FrmTableLayout();
+            tableLayout.ShowDialog();
+        }
+
+        private void imprimirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmImprimir imprimir  = new FrmImprimir();
+            imprimir.ShowDialog();
         }
     }
 

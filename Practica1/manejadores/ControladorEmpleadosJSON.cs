@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using System.Text.Json;
 using System.IO;
 
-namespace Practica1.manejadores
+namespace Practica1.Manejadores
 {
     //Para este controlador tendremos que crear antes el documento .Json en la ruta Proyecto/bin/Debug/
     public static class ControladorEmpleadosJSON

@@ -245,3 +245,7 @@ C:\Users\thoma\Source\Repos\thomaswillix\Interfaces\Practica1\obj\Debug\Practica
 C:\Users\thoma\Source\Repos\thomaswillix\Interfaces\Practica1\obj\Debug\Practica1.Vistas.FrmLogs.resources
 C:\Users\thoma\Source\Repos\thomaswillix\Interfaces\Practica1\obj\Debug\Practica1.FrmPrincipal.resources
 C:\Users\Lucía\Source\Repos\thomaswillix\Interfaces\Practica1\obj\Debug\Practica1.Vistas.FrmAcercaDe.resources
+C:\Users\thoma\Source\Repos\thomaswillix\Interfaces\Practica1\obj\Debug\Practica1.Vistas.FrmSplitContainer.resources
+C:\Users\thoma\Source\Repos\thomaswillix\Interfaces\Practica1\obj\Debug\Practica1.Vistas.FrmFlowLayout.resources
+C:\Users\thoma\Source\Repos\thomaswillix\Interfaces\Practica1\obj\Debug\Practica1.Vistas.FrmTableLayout.resources
+C:\Users\thoma\Source\Repos\thomaswillix\Interfaces\Practica1\obj\Debug\Practica1.Vistas.FrmImprimir.resources

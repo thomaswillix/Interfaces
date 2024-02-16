@@ -8,7 +8,7 @@ using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 
 
-namespace Practica1.manejadores
+namespace Practica1.Manejadores
 {
     public static class ControladorProyectosBin
     {

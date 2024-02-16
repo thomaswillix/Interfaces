@@ -9,7 +9,7 @@ using System.Xml.Serialization;
 using System.IO;
 using Practica1.Modelo;
 
-namespace Practica1.manejadores
+namespace Practica1.Manejadores
 {
     //Importante que los métodos de las clases controladoras y las clases sean public y static
     public static class ControladorClientesXML

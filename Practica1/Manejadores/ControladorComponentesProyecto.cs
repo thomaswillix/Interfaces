@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text.Json;
-using Practica1.manejadores;
+using Practica1.Manejadores;
 using Practica1.Modelo;
 
 namespace Practica1.Manejadores

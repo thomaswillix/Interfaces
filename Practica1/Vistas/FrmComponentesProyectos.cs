@@ -7,8 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Practica1.manejadores;
 using Practica1.Manejadores;
+using Practica1.Modelo;
 
 namespace Practica1.Vistas
 {
@@ -83,11 +83,21 @@ namespace Practica1.Vistas
             }
         }
 
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (ControladorComponentesProyecto.listaComponentes.Contains(
+                new ComponentesProyecto {CodigoProyecto = comboBox1.SelectedIndex.ToString()})) 
+            {
+                populateListView();
+            } 
+        }
+
         private void populateListView()
         {
-            foreach (Empleado e in ControladorEmpleadosJSON.listaEmpleados)
+            foreach (ComponentesProyecto cp in ControladorComponentesProyecto.listaComponentes)
             {
-                listBox2.Text = e.Id.ToString() + e.Nombre + e.Apellido1 + e.Puesto + "\n";
+                listBox2.Text = cp.IdEmpleado.ToString() + " " + cp.Puesto + 
+                    " " + cp.PorcentajeDedicacion +"\n";
             }
         }
 
@@ -96,5 +106,6 @@ namespace Practica1.Vistas
             mostrarEmpleados();
             populateCombo();
         }
+
     }
 }

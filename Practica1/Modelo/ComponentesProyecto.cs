@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Practica1.manejadores;
+using Practica1.Manejadores;
 
 namespace Practica1.Modelo
 {
@@ -14,6 +14,12 @@ namespace Practica1.Modelo
         string puesto;
         float porcentajeDedicacion;
         decimal extras;
+
+        public string CodigoProyecto { get => codigoProyecto; set => codigoProyecto = value; }
+        public int IdEmpleado { get => idEmpleado; set => idEmpleado = value; }
+        public string Puesto { get => puesto; set => puesto = value; }
+        public float PorcentajeDedicacion { get => porcentajeDedicacion; set => porcentajeDedicacion = value; }
+        public decimal Extras { get => extras; set => extras = value; }
 
         public ComponentesProyecto(string codigoProyecto, int idEmpleado, string puesto, float porcentajeDedicacion, decimal extras)
         {
@@ -30,6 +36,7 @@ namespace Practica1.Modelo
             this.puesto = puesto;
             this.porcentajeDedicacion = porcentajeDedicacion;
         }
+        public ComponentesProyecto() { }
         public bool esJefedeProyecto()
         {
             if (puesto.ToLower().Trim()== "jefe")

@@ -123,6 +123,18 @@
     <Compile Include="Vistas\FrmEmpleados.Designer.cs">
       <DependentUpon>FrmEmpleados.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vistas\FrmFlowLayout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\FrmFlowLayout.Designer.cs">
+      <DependentUpon>FrmFlowLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\FrmImprimir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\FrmImprimir.Designer.cs">
+      <DependentUpon>FrmImprimir.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vistas\FrmNuevoCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -175,6 +187,18 @@
     <Compile Include="Modelo\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Modelo\Usuario.cs" />
+    <Compile Include="Vistas\FrmSplitContainer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\FrmSplitContainer.Designer.cs">
+      <DependentUpon>FrmSplitContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vistas\FrmTableLayout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vistas\FrmTableLayout.Designer.cs">
+      <DependentUpon>FrmTableLayout.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Vistas\FrmAcercaDe.resx">
       <DependentUpon>FrmAcercaDe.cs</DependentUpon>
     </EmbeddedResource>
@@ -183,6 +207,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\FrmEmpleados.resx">
       <DependentUpon>FrmEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\FrmFlowLayout.resx">
+      <DependentUpon>FrmFlowLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\FrmImprimir.resx">
+      <DependentUpon>FrmImprimir.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vistas\FrmNuevoCliente.resx">
       <DependentUpon>FrmNuevoCliente.cs</DependentUpon>
@@ -217,6 +247,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Vistas\FrmSplitContainer.resx">
+      <DependentUpon>FrmSplitContainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vistas\FrmTableLayout.resx">
+      <DependentUpon>FrmTableLayout.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

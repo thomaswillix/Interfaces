@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Practica1.manejadores;
+using Practica1.Manejadores;
 
 namespace Practica1.Vistas
 {
