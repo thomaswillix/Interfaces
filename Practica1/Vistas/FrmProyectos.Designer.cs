@@ -130,6 +130,7 @@
             this.Name = "FrmProyectos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmProyectos";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmProyectos_FormClosed);
             this.Load += new System.EventHandler(this.FrmProyectos_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button.CheckBox;
 using Practica1.manejadores;
+using Practica1.Manejadores;
 
 namespace Practica1
 {
@@ -73,22 +74,18 @@ namespace Practica1
 
         private void FrmProyectos_Load(object sender, EventArgs e)
         {
-            ControladorProyectosBin.crearProyectos();
-            ControladorProyectosBin.escribirProyectos();
+            mostrarProyectos();
         }
-        private void home_FormClosed(object sender, FormClosedEventArgs e)
+        private void FrmProyectos_FormClosed(object sender, FormClosedEventArgs e)
         {
-            DialogResult dialog = MessageBox.Show("Are you sure you want to really exit ? ",
-                                    "Exit",
-                                     MessageBoxButtons.YesNo,
-                                     MessageBoxIcon.Question);
-            if (dialog == DialogResult.Yes)
-            {
-                System.Windows.Forms.Application.Exit();
+            if (MessageBox.Show("¿Desea guardar los cambios?", "Guardar", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {                
+                ControladorProyectosBin.escribirProyectos();
+                MessageBox.Show("Guardado");
             }
-            else if (dialog == DialogResult.No)
+            else
             {
-                this.Show();
+                MessageBox.Show("No guardado");
             }
         }
 

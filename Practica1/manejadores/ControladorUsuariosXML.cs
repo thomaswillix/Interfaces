@@ -33,7 +33,7 @@ namespace Practica1.manejadores
             }
         }
 
-        public static void leerUsuariosXML()
+        public static void cargarUsuariosXML()
         {
             try
             {
@@ -86,7 +86,7 @@ namespace Practica1.manejadores
             }
             return false;
         }
-        public static void cargarUsuarios()
+        public static void crearUsuarios()
         {
             Usuario u = new Usuario("root", "1234", true);
             listaUsuarios.Add(u);

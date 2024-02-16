@@ -35,11 +35,11 @@ namespace Practica1.manejadores
             }
         }
 
-        public static void leerClientesXML()
+        public static void cargarClientesXML()
         {
             try
             {
-                string xml = File.ReadAllText("usuarios.xml");
+                string xml = File.ReadAllText("clientes.xml");
                 using (var reader = new StringReader(xml))
                 {
                     XmlSerializer serializer = new XmlSerializer(listaClientes.GetType());
@@ -53,9 +53,9 @@ namespace Practica1.manejadores
             }
         }
 
-        public static void cargarUsuarios()
+        public static void crearClientes()
         {
-            ControladorEmpleadosJSON.crearEmpleados();
+            //ControladorEmpleadosJSON.cargarEmpleados();
             //Image i;
             Empleado e = ControladorEmpleadosJSON.listaEmpleados[0];
             /*c = new Cliente("67378864L", "Natalia Sales", "Avenida de Canarias 3", "Madrid", e, "natalia.sales@gmail.com", "C10483436", 658947512,

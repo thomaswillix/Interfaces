@@ -42,7 +42,7 @@
             // btElim
             // 
             this.btElim.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btElim.Location = new System.Drawing.Point(489, 375);
+            this.btElim.Location = new System.Drawing.Point(571, 375);
             this.btElim.Name = "btElim";
             this.btElim.Size = new System.Drawing.Size(75, 23);
             this.btElim.TabIndex = 13;
@@ -53,7 +53,7 @@
             // botonCancelar
             // 
             this.botonCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.botonCancelar.Location = new System.Drawing.Point(193, 375);
+            this.botonCancelar.Location = new System.Drawing.Point(147, 375);
             this.botonCancelar.Name = "botonCancelar";
             this.botonCancelar.Size = new System.Drawing.Size(130, 23);
             this.botonCancelar.TabIndex = 8;
@@ -85,7 +85,7 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(193, 101);
+            this.comboBox1.Location = new System.Drawing.Point(147, 101);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 15;
@@ -95,15 +95,15 @@
             this.listBox1.FormattingEnabled = true;
             this.listBox1.Location = new System.Drawing.Point(421, 128);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(225, 225);
+            this.listBox1.Size = new System.Drawing.Size(348, 225);
             this.listBox1.TabIndex = 16;
             // 
             // listBox2
             // 
             this.listBox2.FormattingEnabled = true;
-            this.listBox2.Location = new System.Drawing.Point(143, 128);
+            this.listBox2.Location = new System.Drawing.Point(28, 128);
             this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(225, 225);
+            this.listBox2.Size = new System.Drawing.Size(340, 225);
             this.listBox2.TabIndex = 17;
             // 
             // FrmComponentesProyectos

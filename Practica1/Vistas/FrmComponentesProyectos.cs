@@ -19,42 +19,18 @@ namespace Practica1.Vistas
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void mostrarEmpleados()
         {
+            int posicion = 2;
 
-        }
-
-        private void ordenarProyectos(Func<Proyecto, IComparable> aux)
-        {
-            ControladorProyectosBin.listaProyectos = ControladorProyectosBin.listaProyectos.OrderBy(aux).ToList();
-
-        }
-
-        private void mostrarProyectos()
-        {
-            int posicion = 10;
-
-            foreach (Proyecto p in ControladorProyectosBin.listaProyectos)
+            foreach (Empleado e in ControladorEmpleadosJSON.listaEmpleados)
             {
-                crearChecked(p, posicion);
+                crearChecked(e, posicion);
                 posicion += 30;
             }
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            mostrarProyectos();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            listBox1.Controls.Clear();
-            ordenarProyectos(Proyecto => Proyecto.FechaIni);
-            mostrarProyectos();
-        }
-
-
-        private void crearChecked(Proyecto p1, int posicion)
+        private void crearChecked(Empleado x, int posicion)
         {
             System.Windows.Forms.CheckBox cb = new System.Windows.Forms.CheckBox();
 
@@ -62,10 +38,10 @@ namespace Practica1.Vistas
             cb.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F,
             System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point,
             ((byte)(0)));
-            cb.Location = new System.Drawing.Point(75, posicion);
+            cb.Location = new System.Drawing.Point(20, posicion);
             cb.Size = new System.Drawing.Size(291, 20);
             cb.TabIndex = 1;
-            cb.Text = p1.Descripcion;
+            cb.Text = x.Id.ToString() + " " + x.Nombre + " " + x.Apellido1 + " " + x.Puesto;
             listBox1.Controls.Add(cb);
         }
 
@@ -89,12 +65,12 @@ namespace Practica1.Vistas
             {
                 if (cd.Checked)
                 {
-                    int posicion = ControladorProyectosBin.listaProyectos.FindIndex(x => x.Descripcion == cd.Text);
+                    int posicion = ControladorEmpleadosJSON.listaEmpleados.FindIndex(x => x.Id.ToString() + " " + x.Nombre + " " + x.Apellido1 + " " + x.Puesto == cd.Text);
                     ControladorProyectosBin.listaProyectos.RemoveAt(posicion);
                 }
             }
             this.listBox1.Controls.Clear();
-            mostrarProyectos();
+            mostrarEmpleados();
         }
 
         private void populateCombo()
@@ -109,12 +85,15 @@ namespace Practica1.Vistas
 
         private void populateListView()
         {
-
+            foreach (Empleado e in ControladorEmpleadosJSON.listaEmpleados)
+            {
+                listBox2.Text = e.Id.ToString() + e.Nombre + e.Apellido1 + e.Puesto + "\n";
+            }
         }
 
         private void FrmComponentesProyectos_Load(object sender, EventArgs e)
         {
-            ControladorProyectosBin.cargarProyectos();
+            mostrarEmpleados();
             populateCombo();
         }
     }

@@ -2,6 +2,7 @@
 using System.Drawing.Text;
 using System.Security.Permissions;
 using System.Windows.Forms;
+using Practica1.Manejadores;
 using Practica1.manejadores;
 using Practica1.Vistas;
 
@@ -63,46 +64,13 @@ namespace Practica1
             MessageBox.Show("Has pulsado Cancelar");
         }
 
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, System.EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, System.EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, System.EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_1(object sender, System.EventArgs e)
-        {
-
-        }
-
-        private void textBox3_TextChanged(object sender, System.EventArgs e)
-        {
-
-        }
-
-        private void IblError_Click(object sender, System.EventArgs e)
-        {
-
-        }
-
         private void GestionaIES_Load(object sender, System.EventArgs e)
         {
-            //ControladorUsuariosXML.cargarUsuarios();
-            //ControladorUsuariosXML.escribirUsuariosXML();
-            ControladorUsuariosXML.leerUsuariosXML();
+            ControladorClientesXML.cargarClientesXML();
+            ControladorComponentesProyecto.crearComponentes();
+            ControladorEmpleadosJSON.cargarEmpleados();
+            ControladorProyectosBin.cargarProyectos();
+            ControladorUsuariosXML.cargarUsuariosXML();
         }
 
         private void button1_Click_1(object sender, System.EventArgs e)

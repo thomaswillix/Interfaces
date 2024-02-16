@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Practica1
 {
+    [Serializable]
     public class Proyecto 
     {
         private int codigo;

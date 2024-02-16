@@ -1,12 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.IO;
+using System.Linq;
 using System.Text.Json;
-using System.Threading.Tasks;
-using Practica1.Modelo;
 using Practica1.manejadores;
+using Practica1.Modelo;
 
 namespace Practica1.Manejadores
 {
@@ -14,7 +12,7 @@ namespace Practica1.Manejadores
     {
         public static List<ComponentesProyecto> listaComponentes= new List<ComponentesProyecto>();
         
-        public static void leerComponentes()
+        public static void cargarComponentes()
         {
             try
             {
@@ -47,7 +45,7 @@ namespace Practica1.Manejadores
                 throw;
             }
         }
-        public static void cargarComponentes()
+        public static void crearComponentes()
         {
             //Cargamos las listas que utilizaremos
             ControladorProyectosBin.cargarProyectos();

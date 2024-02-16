@@ -25,7 +25,7 @@ namespace Practica1.manejadores
             }
             catch (Exception)
             {
-                Console.WriteLine("Error al leer los proyectos del archivo binario");
+                Console.WriteLine("Error al cargar los proyectos del archivo binario");
             }
         }
         public static bool escribirProyectos()

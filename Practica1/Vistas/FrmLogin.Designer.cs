@@ -87,7 +87,6 @@
             this.enlace.TabIndex = 6;
             this.enlace.TabStop = true;
             this.enlace.Text = "Enlace a la web";
-            this.enlace.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // usuario
             // 
@@ -100,7 +99,6 @@
             this.usuario.Size = new System.Drawing.Size(69, 19);
             this.usuario.TabIndex = 3;
             this.usuario.Text = "Usuario";
-            this.usuario.Click += new System.EventHandler(this.label1_Click);
             // 
             // pictureBox1
             // 
@@ -112,7 +110,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // cuadroUsu
             // 
@@ -123,7 +120,6 @@
             this.cuadroUsu.Name = "cuadroUsu";
             this.cuadroUsu.Size = new System.Drawing.Size(150, 26);
             this.cuadroUsu.TabIndex = 1;
-            this.cuadroUsu.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // clave
             // 
@@ -136,7 +132,6 @@
             this.clave.Size = new System.Drawing.Size(52, 19);
             this.clave.TabIndex = 6;
             this.clave.Text = "Clave";
-            this.clave.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // textBox2
             // 
@@ -157,7 +152,6 @@
             this.cuadroCont.PasswordChar = '*';
             this.cuadroCont.Size = new System.Drawing.Size(150, 26);
             this.cuadroCont.TabIndex = 2;
-            this.cuadroCont.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // disclaimer
             // 
@@ -184,7 +178,6 @@
             this.IblError.TabIndex = 10;
             this.IblError.Text = "Usuario y/o clave incorrecta";
             this.IblError.Visible = false;
-            this.IblError.Click += new System.EventHandler(this.IblError_Click);
             // 
             // btReg
             // 

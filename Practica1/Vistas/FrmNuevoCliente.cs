@@ -289,7 +289,7 @@ namespace Practica1.Vistas
             Cliente c = new Cliente(cif.Text, nom.Text, direccion.Text, ciudad.Text, e, correo.Text,
                 cif.Text, telefono.Text, pais.Text, rb.Text, descuento.Value, coments.Text,
                 pictureBox1.Image, dateTimePicker1.Value);
-            ControladorClientesXML.leerClientesXML();
+            ControladorClientesXML.cargarClientesXML();
             ControladorClientesXML.listaClientes.Add(c);
             ControladorClientesXML.escribirClientesXML();
         }
