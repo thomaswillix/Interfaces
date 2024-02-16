@@ -29,7 +29,7 @@ namespace Practica1.Vistas
 
         private void btnHome_Click(object sender, EventArgs e)
         {
-            webBrowser1.Navigate(new Uri("http:///www.madrid.org"));
+            webBrowser1.Navigate(new Uri("http://www.madrid.org"));
         }
     }
 }

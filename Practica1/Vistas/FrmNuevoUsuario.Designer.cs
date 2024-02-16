@@ -37,7 +37,7 @@
             // 
             // b1
             // 
-            this.b1.Location = new System.Drawing.Point(47, 97);
+            this.b1.Location = new System.Drawing.Point(92, 97);
             this.b1.Name = "b1";
             this.b1.Size = new System.Drawing.Size(75, 23);
             this.b1.TabIndex = 3;
@@ -47,7 +47,7 @@
             // 
             // user
             // 
-            this.user.Location = new System.Drawing.Point(61, 28);
+            this.user.Location = new System.Drawing.Point(106, 28);
             this.user.Name = "user";
             this.user.Size = new System.Drawing.Size(100, 20);
             this.user.TabIndex = 1;
@@ -56,7 +56,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.ForeColor = System.Drawing.SystemColors.Control;
-            this.label13.Location = new System.Drawing.Point(10, 31);
+            this.label13.Location = new System.Drawing.Point(55, 31);
             this.label13.Name = "label13";
             this.label13.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label13.Size = new System.Drawing.Size(43, 13);
@@ -65,7 +65,7 @@
             // 
             // pass
             // 
-            this.pass.Location = new System.Drawing.Point(61, 56);
+            this.pass.Location = new System.Drawing.Point(106, 56);
             this.pass.Name = "pass";
             this.pass.Size = new System.Drawing.Size(100, 20);
             this.pass.TabIndex = 2;
@@ -74,7 +74,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(11, 59);
+            this.label1.Location = new System.Drawing.Point(56, 59);
             this.label1.Name = "label1";
             this.label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.label1.Size = new System.Drawing.Size(34, 13);
@@ -87,7 +87,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(182, 155);
+            this.ClientSize = new System.Drawing.Size(273, 138);
             this.Controls.Add(this.pass);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.b1);

@@ -95,6 +95,7 @@ namespace Practica1
             ControladorProyectosBin.listaProyectos.Add(new Proyecto((int)cod.Value, desc.Text, fechaIni.Value,
                 fechaFin.Value, estado.Checked, (Double)presuIni.Value, (Double)presuFin.Value,
                 cambios.Checked, (int)codCli.Value));
+            ControladorProyectosBin.escribirProyectos();
         }
 
         private void b1_Click(object sender, EventArgs e)

@@ -20,7 +20,6 @@ namespace Practica1.Vistas
 
         private void nuevo_usuario_Load(object sender, EventArgs e)
         {
-            ControladorUsuariosXML.cargarUsuariosXML();
         }
         private bool validar()
         {

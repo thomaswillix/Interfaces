@@ -21,9 +21,6 @@ namespace Practica1
 
         private void FrmEmpleados_Load(object sender, EventArgs e)
         {
-            //Esto se comentará luego.
-            ControladorEmpleadosJSON.crearEmpleados();
-            ControladorEmpleadosJSON.escribirEmpleados();
             ControladorEmpleadosJSON.cargarEmpleados();
             mostrarEmpleados();
         }

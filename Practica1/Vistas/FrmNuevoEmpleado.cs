@@ -99,6 +99,7 @@ namespace Practica1
         {
             ControladorEmpleadosJSON.listaEmpleados.Add(new Empleado((int)cod.Value, dni.Text, nom.Text, ape1.Text, ape2.Text,
                 puesto.Text, (int)tlf.Value, correo.Text, fechaNac.Value, (int)numSS.Value, come.Text));
+            ControladorEmpleadosJSON.escribirEmpleados();
         }
 
         private void b1_Click(object sender, EventArgs e)
