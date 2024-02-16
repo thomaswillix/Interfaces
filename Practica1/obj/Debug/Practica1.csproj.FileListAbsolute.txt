@@ -244,3 +244,4 @@ C:\Users\thoma\Source\Repos\thomaswillix\Interfaces\Practica1\obj\Debug\Practica
 C:\Users\thoma\Source\Repos\thomaswillix\Interfaces\Practica1\obj\Debug\Practica1.FrmLogin.resources
 C:\Users\thoma\Source\Repos\thomaswillix\Interfaces\Practica1\obj\Debug\Practica1.Vistas.FrmLogs.resources
 C:\Users\thoma\Source\Repos\thomaswillix\Interfaces\Practica1\obj\Debug\Practica1.FrmPrincipal.resources
+C:\Users\Lucía\Source\Repos\thomaswillix\Interfaces\Practica1\obj\Debug\Practica1.Vistas.FrmAcercaDe.resources

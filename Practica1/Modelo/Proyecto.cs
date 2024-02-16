@@ -37,6 +37,10 @@ namespace Practica1
             this.PresupuestoIni = presupuestoIni;
             this.PresupuestoAct = presupuestoAct;
         }
+        public Proyecto()
+        {
+
+        }
         public override string ToString() 
         {
             return this.descripcion.ToString();

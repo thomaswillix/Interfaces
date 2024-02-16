@@ -55,7 +55,7 @@ namespace Practica1.manejadores
 
         public static void cargarUsuarios()
         {
-            ControladorEmpleadosJSON.cargarEmpleados();
+            ControladorEmpleadosJSON.crearEmpleados();
             //Image i;
             Empleado e = ControladorEmpleadosJSON.listaEmpleados[0];
             /*c = new Cliente("67378864L", "Natalia Sales", "Avenida de Canarias 3", "Madrid", e, "natalia.sales@gmail.com", "C10483436", 658947512,

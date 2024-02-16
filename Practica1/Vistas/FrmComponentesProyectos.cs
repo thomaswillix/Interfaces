@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Practica1.manejadores;
+using Practica1.Manejadores;
 
 namespace Practica1.Vistas
 {
@@ -68,38 +69,19 @@ namespace Practica1.Vistas
             listBox1.Controls.Add(cb);
         }
 
-        private void home_FormClosed(object sender, FormClosedEventArgs e)
+        private void FrmComponenesProyectos_FormClosing(object sender, FormClosingEventArgs e)
         {
-            DialogResult dialog = MessageBox.Show("Are you sure you want to really exit ? ",
-                                    "Exit",
-                                     MessageBoxButtons.YesNo,
-                                     MessageBoxIcon.Question);
-            if (dialog == DialogResult.Yes)
+            if (MessageBox.Show("¿Desea guardar los cambios?", "Guardar", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                System.Windows.Forms.Application.Exit();
+                ControladorComponentesProyecto.escribirComponentes();
+                MessageBox.Show("Guardado");
             }
-            else if (dialog == DialogResult.No)
+            else
             {
-                this.Show();
+                MessageBox.Show("No guardado");
             }
         }
 
-        private void botonCancelar_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ordenarNombre_Click(object sender, EventArgs e)
-        {
-            listBox1.Controls.Clear();
-            ordenarProyectos(Proyecto => Proyecto.Descripcion);
-            mostrarProyectos();
-        }
 
         private void btElim_Click(object sender, EventArgs e)
         {
@@ -115,11 +97,6 @@ namespace Practica1.Vistas
             mostrarProyectos();
         }
 
-        private void titulo_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void populateCombo()
         {
             comboBox1.Items.Clear();
@@ -130,12 +107,14 @@ namespace Practica1.Vistas
             }
         }
 
+        private void populateListView()
+        {
+
+        }
+
         private void FrmComponentesProyectos_Load(object sender, EventArgs e)
         {
-            //ControladorProyectosBin.cargarProyectos();
-            //ControladorProyectosBin.escribirProyectos();
-            ControladorEmpleadosJSON.leerEmpleados();
-            ControladorProyectosBin.leerProyectos();
+            ControladorProyectosBin.cargarProyectos();
             populateCombo();
         }
     }

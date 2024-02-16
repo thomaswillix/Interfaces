@@ -32,7 +32,7 @@ namespace Practica1.Modelo
         }
         public bool esJefedeProyecto()
         {
-            if (puesto == "jefe de proyecto")
+            if (puesto.ToLower().Trim()== "jefe")
             {
                 return true;
             }

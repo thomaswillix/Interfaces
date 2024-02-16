@@ -2,41 +2,42 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.IO;
 using System.Text.Json;
 using System.Threading.Tasks;
 using Practica1.Modelo;
+using Practica1.manejadores;
 
 namespace Practica1.Manejadores
 {
     public class ControladorComponentesProyecto
     {
-        public static List<Empleado> listaEmpleados = new List<Empleado>();
-        public static List<Proyecto> listaProyectos= new List<Proyecto>();
-
-        /*public static void leerComponentes()
+        public static List<ComponentesProyecto> listaComponentes= new List<ComponentesProyecto>();
+        
+        public static void leerComponentes()
         {
             try
             {
-                if (File.Exists("empleados.Json"))
+                if (File.Exists("componentes.Json"))
                 {
-                    string jsonString = File.ReadAllText("empleados.Json");
-                    listaEmpleados = JsonSerializer.Deserialize<List<Empleado>>(jsonString);
+                    string jsonString = File.ReadAllText("componentes.Json");
+                    
+                    listaComponentes = JsonSerializer.Deserialize<List<ComponentesProyecto>>(jsonString);
                 }
 
             }
             catch (Exception)
             {
-
                 throw;
             }
         }
-        public static void escribirEmpleados()
+        public static void escribirComponentes()
         {
             try
             {
                 if (File.Exists("empleados.Json"))
                 {
-                    string jsonString = JsonSerializer.Serialize(listaEmpleados);
+                    string jsonString = JsonSerializer.Serialize(listaComponentes);
                     File.WriteAllText("empleados.Json", jsonString);
                 }
             }
@@ -46,23 +47,20 @@ namespace Practica1.Manejadores
                 throw;
             }
         }
-        public static void cargarEmpleados()
+        public static void cargarComponentes()
         {
-            if (ControladorEmpleadosJSON.listaEmpleados.Contains(new Empleado { Id = idEmpleado }))
-
-                ComponentesProyecto cp = new ComponentesProyecto(1, )
-            DateTime d = new DateTime(2002, 2, 3, 13, 0, 0);
-            Empleado e = new Empleado(1, "Juan", "Rodriguez", "Perez", "programador", d);
-            listaEmpleados.Add(e);
-            d = new DateTime(2000, 9, 4, 22, 0, 0);
-            e = new Empleado(1, "Pablo", "Hernandez", "Ortiz", "becario", d);
-            listaEmpleados.Add(e);
-            d = new DateTime(2005, 6, 2, 7, 0, 0);
-            e = new Empleado(1, "Juana", "Martin", "Soler", "programador", d);
-            listaEmpleados.Add(e);
-            d = new DateTime(1997, 8, 2, 12, 0, 0);
-            e = new Empleado(1, "Maria", "Pinar", "Dueñas", "jefe", d);
-            listaEmpleados.Add(e);
-        }*/
+            //Cargamos las listas que utilizaremos
+            ControladorProyectosBin.cargarProyectos();
+            ControladorEmpleadosJSON.cargarEmpleados();
+            //Creamos una Tupla o Diccionario (nose) de forma que Proyecto --> Empleado
+            var ProyectosYEmpleados = ControladorProyectosBin.listaProyectos.Zip(ControladorEmpleadosJSON.listaEmpleados, (p, e)
+                => new { Proyecto = p, Empleado = e });
+            //Creamos cada Objeto ComponentesProyecto con valores por defecto y lo añadimos a la listaComponentes
+            foreach (var pe in ProyectosYEmpleados)
+            {
+                ComponentesProyecto cp = new ComponentesProyecto(pe.Proyecto.Descripcion, pe.Empleado.Id, pe.Empleado.Puesto, 3.9f, 2.4m);
+                listaComponentes.Add(cp);
+            }
+        }
     }
 }

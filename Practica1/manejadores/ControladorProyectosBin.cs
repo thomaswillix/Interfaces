@@ -14,7 +14,7 @@ namespace Practica1.manejadores
     {
         public static List<Proyecto> listaProyectos = new List<Proyecto>();
 
-        public static void leerProyectos()
+        public static void cargarProyectos()
         {
             try
             {
@@ -46,7 +46,7 @@ namespace Practica1.manejadores
             }
         }
         //Carga de proyectos de prueba
-        public static void cargarProyectos()
+        public static void crearProyectos()
         {
             DateTime fechaIni = new DateTime(2011, 2, 3, 13, 0, 0);
             DateTime fechaFin = DateTime.Today;

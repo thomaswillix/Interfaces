@@ -15,7 +15,7 @@ namespace Practica1.manejadores
 
         public static List<Empleado> listaEmpleados = new List<Empleado>();
 
-        public static void leerEmpleados()
+        public static void cargarEmpleados()
         {
             try
             {
@@ -27,7 +27,6 @@ namespace Practica1.manejadores
             }
             catch (Exception)
             {
-
                 throw;
             }
         }
@@ -47,7 +46,7 @@ namespace Practica1.manejadores
                 throw;
             }
         }
-        public static void cargarEmpleados()
+        public static void crearEmpleados()
         {
             DateTime d = new DateTime(2002, 2, 3, 13, 0, 0);
             Empleado e = new Empleado(1, "Juan", "Rodriguez", "Perez", "programador", d);
