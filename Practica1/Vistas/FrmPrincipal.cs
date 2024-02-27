@@ -42,7 +42,7 @@ namespace Practica1
 
         private void altaToolStripMenuItem2_Click(object sender, EventArgs e)
         {
-            FrmNuevoProyecto proy = new FrmNuevoProyecto();
+            FrmNuevoProyectoBBDDyFich proy = new FrmNuevoProyectoBBDDyFich();
             proy.ShowDialog();
         }
 

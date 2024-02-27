@@ -12,10 +12,10 @@ using Practica1.Manejadores;
 
 namespace Practica1
 {
-    public partial class FrmNuevoProyecto : Form
+    public partial class FrmNuevoProyectoBBDDyFich : Form
     {
         ToolTip tp = new ToolTip();
-        public FrmNuevoProyecto()
+        public FrmNuevoProyectoBBDDyFich()
         {
             InitializeComponent();
         }

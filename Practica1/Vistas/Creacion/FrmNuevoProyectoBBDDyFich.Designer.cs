@@ -1,6 +1,6 @@
 ﻿namespace Practica1
 {
-    partial class FrmNuevoProyecto
+    partial class FrmNuevoProyectoBBDDyFich
     {
         /// <summary>
         /// Required designer variable.
