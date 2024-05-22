@@ -8,27 +8,19 @@ namespace Practica1.Modelo
 {
     public class Database
     {
+        // Directorio del archivo de base de datos relativo al directorio de ejecución
+        // A diferencia de la anterior versión, forzamos a que coja la ruta relativa con el
+        // Path.GetFullPath
+        private static string databaseFileName = Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\SampleDatabase.mdf"));
+        //string databaseFileName = "baseDatosGestiona.mdf";
+        // Cadena de conexión
+        private static string connectionString = $"Data Source=(LocalDB)\\MSSQLLocalDB; AttachDbFilename ={databaseFileName}; Integrated Security = True";
+        // Usar la cadena de conexión
 
-        public string construirCadenaConexión()
-        {
-            // Directorio del archivo de base de datos relativo al directorio de ejecución
-            // A diferencia de la anterior versión, forzamos a que coja la ruta relativa con el
-            // Path.GetFullPath
-            string databaseFileName = Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\SampleDatabase.mdf"));
-            //string databaseFileName = "baseDatosGestiona.mdf";
-            // Cadena de conexión
-            string connectionString = $"Data Source=(LocalDB)\\MSSQLLocalDB; AttachDbFilename ={databaseFileName}; Integrated Security = True";
-            // Usar la cadena de conexión
-            MessageBox.Show("Cadena de conexión: " + connectionString);
-            return connectionString;
-        }
 
         // Modificado: Ahora los parámetros son pasados como argumentos
         public void insertarProyecto(string descripcion, string fechaInicio, string fechaFin, string estado, double presupuestoInicial, double presupuestoFinal, string cambios, string codigoCliente)
         {
-            // Cadena de conexión a la base de datos
-            // Ver método construirCadenaConexión más arriba
-            string connectionString = construirCadenaConexión();
             // Query de inserción
             string query = "INSERT INTO Proyectos (Descripcion, FechaInicio, FechaFin, Estado, PresupuestoInicial, presupuestoFinal, Cambios, CodigoCliente) VALUES (@Descripcion, @FechaInicio, @FechaFin, @Estado, @PresupuestoInicial, @PresupuestoFinal, @Cambios, @CodigoCliente)";
 
@@ -66,8 +58,6 @@ namespace Practica1.Modelo
         }
         public DataTable ObtenerProyectos()
         {
-            // Cadena de conexión a la base de datos
-            string connectionString = construirCadenaConexión();
             // Query para obtener los proyectos
             string query = "SELECT * FROM Proyectos";
 
@@ -93,8 +83,6 @@ namespace Practica1.Modelo
         }
         public void CargarDatosEspecificosDataGridView(DataGridView dataGridView)
         {
-            // Cadena de conexión a la base de datos
-            string connectionString = construirCadenaConexión();
             // Query para obtener los datos específicos
             string query = "SELECT Id, estado FROM Proyectos";
 
@@ -130,6 +118,72 @@ namespace Practica1.Modelo
                 }
             }
 
+        }
+        public static void borrarProyecto(int cod)
+        {
+            string query = "DELETE FROM Proyectos where Id = @cod";
+            // Crear la conexión
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                // Abrir la conexión
+                connection.Open();
+                // Crear un objeto SqlCommand con la consulta y la conexión
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    // Agregar parámetros y sus valores
+                    command.Parameters.AddWithValue("@cod", cod);
+                    try
+                    {
+                        // Ejecutar la consulta de inserción
+                        int registrosAfectados = command.ExecuteNonQuery();
+                        MessageBox.Show($"Se borró correctamente el registro. Registros afectados: {registrosAfectados}");
+                        connection.Close();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show($"Error al borrar el registro: {ex.Message}");
+                        connection.Close();
+                    }
+                }
+            }
+        }
+        public static void modificarProyecto(int id, string descripcion, string fechaInicio, string fechaFin, string estado, double presupuestoInicial, double presupuestoFinal, string cambios, string codigoCliente)
+        {
+            // Query de inserción
+            string query = "UPDATE Incidencias SET (Descripcion=@descripcion, FechaInicio=@fechaIni, FechaFin=@fechaFin, Estado=@estado, PresupuestoInicial=@presupuestoInicial, presupuestoFinal=@presupuestoFinal, Cambios=@cambios, CodigoCliente=@codigoCliente) WHERE Id = (@id)";
+
+            // Crear la conexión
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                // Abrir la conexión
+                connection.Open();
+                // Crear un objeto SqlCommand con la consulta y la conexión
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    // Agregar parámetros y sus valores
+                    command.Parameters.AddWithValue("@id", id);
+                    command.Parameters.AddWithValue("@desc", descripcion);
+                    command.Parameters.AddWithValue("@estado", fechaInicio);
+                    command.Parameters.AddWithValue("@fecha", fechaFin);
+                    command.Parameters.AddWithValue("@coste", estado);
+                    command.Parameters.AddWithValue("@coste", presupuestoInicial);
+                    command.Parameters.AddWithValue("@coste", presupuestoFinal);
+                    command.Parameters.AddWithValue("@coste", cambios);
+                    command.Parameters.AddWithValue("@coste", codigoCliente);
+                    try
+                    {
+                        // Ejecutar la consulta de inserción
+                        int registrosAfectados = command.ExecuteNonQuery();
+                        MessageBox.Show($"Se actualizó correctamente el registro. Registros afectados: {registrosAfectados}");
+                        connection.Close();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show($"Error al actualizarel registro: {ex.Message}");
+                        connection.Close();
+                    }
+                }
+            }
         }
     }
 }

@@ -1,12 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
 using System.Windows.Forms;
 //importamos estas dependencias
 using System.Xml.Serialization;
-using System.IO;
 
 namespace Practica1.Manejadores
 {
@@ -28,7 +25,8 @@ namespace Practica1.Manejadores
                     serializer.Serialize(writer, listaUsuarios, namespaces);
                 }
             }
-            catch (Exception) {
+            catch (Exception)
+            {
                 Console.WriteLine("Error al escribir el usuairo");
             }
         }
@@ -41,13 +39,13 @@ namespace Practica1.Manejadores
                 using (var reader = new StringReader(xml))
                 {
                     XmlSerializer serializer = new XmlSerializer(listaUsuarios.GetType());
-                    listaUsuarios = (List<Usuario>) serializer.Deserialize(reader);
+                    listaUsuarios = (List<Usuario>)serializer.Deserialize(reader);
                 }
             }
 
             catch (Exception)
             {
-                
+
             }
         }
 

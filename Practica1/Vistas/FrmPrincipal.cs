@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Practica1.Vistas;
 using Practica1.Vistas.Ejemplos;
@@ -18,14 +11,14 @@ namespace Practica1
         public FrmPrincipal()
         {
             InitializeComponent();
-
+            this.IsMdiContainer = true;
         }
 
         private void Principal_Load(object sender, EventArgs e)
         {
             this.IsMdiContainer = true;
             //Mensaje personalizado para la pestaña principal.
-            label2.Text += " " +Usuario.u.User;
+            label2.Text += " " + Usuario.u.User;
 
             logsToolStripMenuItem.Visible = false;
             if (Usuario.u.EsAdmin)
@@ -42,7 +35,7 @@ namespace Practica1
 
         private void altaToolStripMenuItem2_Click(object sender, EventArgs e)
         {
-            FrmNuevoProyectoBBDDyFich proy = new FrmNuevoProyectoBBDDyFich();
+            FrmNuevoProyecto proy = new FrmNuevoProyecto();
             proy.ShowDialog();
         }
 
@@ -116,13 +109,15 @@ namespace Practica1
 
         private void imprimirToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmImprimir imprimir  = new FrmImprimir();
+            FrmImprimir imprimir = new FrmImprimir();
             imprimir.ShowDialog();
         }
 
         private void mDIToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            MainForm mdiChildEx = new MainForm();
+            mdiChildEx.MdiParent = this;
+            mdiChildEx.Show();
         }
 
         private void pasarParamsToolStripMenuItem_Click(object sender, EventArgs e)
@@ -141,6 +136,12 @@ namespace Practica1
         {
             FrmProyectosConDataGridView frmProyectos = new FrmProyectosConDataGridView();
             frmProyectos.ShowDialog();
+        }
+
+        private void listadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmClientes clientes = new FrmClientes();
+            clientes.Show();
         }
     }
 
