@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Drawing.Text;
-using System.Security.Permissions;
 using System.Windows.Forms;
 using Practica1.Manejadores;
 using Practica1.Vistas;
@@ -10,7 +8,7 @@ namespace Practica1
     public partial class FrmLogin : Form
     {
         private int intentos = 0;
-        
+
 
         public FrmLogin()
         {
@@ -20,14 +18,15 @@ namespace Practica1
         private void backgroundWorker1_DoWork(object sender, System.ComponentModel.DoWorkEventArgs e)
         {
 
-        }    
-        
+        }
+
         private void button1_Click(object sender, System.EventArgs e)
         {
-            MessageBox.Show("Has pulsado Aceptar");    
+            MessageBox.Show("Has pulsado Aceptar");
             string usuario = cuadroUsu.Text.ToLower();
             string contrasena = cuadroCont.Text.ToLower();
-            if(validaLogin(ref usuario, ref contrasena) == true){
+            if (validaLogin(ref usuario, ref contrasena) == true)
+            {
                 //ControladorUsuariosXML.buscarUsuario(usuario, contrasena);
                 cuadroUsu.Clear();
                 cuadroCont.Clear();
@@ -43,7 +42,7 @@ namespace Practica1
                 cuadroUsu.Clear();
                 cuadroCont.Clear();
                 cuadroUsu.Focus();
-                if (intentos >=3)
+                if (intentos >= 3)
                 {
                     MessageBox.Show("Llevas 3 intentos");
                     intentos = 0;
@@ -52,7 +51,7 @@ namespace Practica1
             }
             // En la llamada es necesario pasarlo como ref | out
         }
-       
+
         bool validaLogin(ref string usuario, ref string clave)
         {
             return ControladorUsuariosXML.validaLogin(ref usuario, ref clave);
@@ -65,6 +64,8 @@ namespace Practica1
 
         private void GestionaIES_Load(object sender, System.EventArgs e)
         {
+            ControladorClientesXML.crearClientes();
+            ControladorClientesXML.escribirClientesXML();
             ControladorClientesXML.cargarClientesXML();
             ControladorComponentesProyecto.crearComponentes();
             ControladorEmpleadosJSON.cargarEmpleados();

@@ -1,12 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+using System.Drawing;
+using System.IO;
 //importamos estas dependencias
 using System.Xml.Serialization;
-using System.IO;
 using Practica1.Modelo;
 
 namespace Practica1.Manejadores
@@ -55,13 +52,21 @@ namespace Practica1.Manejadores
 
         public static void crearClientes()
         {
-            //ControladorEmpleadosJSON.cargarEmpleados();
-            //Image i;
+            Image i = null;
+            DateTime d = DateTime.Now;
             Empleado e = ControladorEmpleadosJSON.listaEmpleados[0];
-            /*c = new Cliente("67378864L", "Natalia Sales", "Avenida de Canarias 3", "Madrid", e, "natalia.sales@gmail.com", "C10483436", 658947512,
-                "Zimbawe","Pequeño",5, "Comentarios muy comentados",  );
-            listaClientes.Add(c);*/
-           
+            Cliente c = new Cliente("67378864L", "Natalia Sales", "Avenida de Canarias 3", "Madrid", e, "natalia.sales@gmail.com", "C10483436", "658947512",
+                "Zimbawe", "Pequeño", 5, "Comentarios muy comentados", i, d);
+            listaClientes.Add(c);
+            c = new Cliente("54875412A", "Pepe Lopez", "Avenida de Portugal 2", "Madrid", e, "pepe.lopez@gmail.com", "C10326365", "655458215",
+                "Marruecos", "Muy grande", 2, "Comentarios poco comentados", i, d);
+            listaClientes.Add(c);
+            c = new Cliente("45975612D", "Juana Magán", "Calle de Barcelona 35", "Fuanlabrada", e, "juana@gmail.com", "C16547521", "645875695",
+                "Portugal", "Grande", 5, "Comentarios comentados", i, d);
+            listaClientes.Add(c);
+            c = new Cliente("987654123V", "No Se", "Calle de Tokyo 4", "Coslada", e, "nose.nose@gmail.com", "H54876521", "654487694",
+                "Nose", "Pequeño", 5, "Comentarios", i, d);
+            listaClientes.Add(c);
         }
     }
 }
