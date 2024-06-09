@@ -1,29 +1,26 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Practica1.Manejadores;
-
-namespace Practica1.Modelo
+﻿namespace Practica1.Modelo
 {
     public class ComponentesProyecto
     {
-        string codigoProyecto;
+        int codP;
+        string descripcionP;
         int idEmpleado;
         string puesto;
         float porcentajeDedicacion;
         decimal extras;
 
-        public string CodigoProyecto { get => codigoProyecto; set => codigoProyecto = value; }
+
+        public int CodigoP { get => codP; set => codP = value; }
+        public string DescripcionP { get => descripcionP; set => descripcionP = value; }
         public int IdEmpleado { get => idEmpleado; set => idEmpleado = value; }
         public string Puesto { get => puesto; set => puesto = value; }
         public float PorcentajeDedicacion { get => porcentajeDedicacion; set => porcentajeDedicacion = value; }
         public decimal Extras { get => extras; set => extras = value; }
 
-        public ComponentesProyecto(string codigoProyecto, int idEmpleado, string puesto, float porcentajeDedicacion, decimal extras)
+        public ComponentesProyecto(int codP, string codigoProyecto, int idEmpleado, string puesto, float porcentajeDedicacion, decimal extras)
         {
-            this.codigoProyecto = codigoProyecto;
+            this.codP = codP;
+            this.descripcionP = codigoProyecto;
             this.idEmpleado = idEmpleado;
             this.puesto = puesto;
             this.porcentajeDedicacion = porcentajeDedicacion;
@@ -39,7 +36,7 @@ namespace Practica1.Modelo
         public ComponentesProyecto() { }
         public bool esJefedeProyecto()
         {
-            if (puesto.ToLower().Trim()== "jefe")
+            if (puesto.ToLower().Trim() == "jefe")
             {
                 return true;
             }

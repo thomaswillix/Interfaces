@@ -309,3 +309,4 @@ C:\Users\alumno\Desktop\Interfaces\Practica1\obj\Debug\Practica1.csproj.CopyComp
 C:\Users\alumno\Desktop\Interfaces\Practica1\obj\Debug\Practica1.exe
 C:\Users\alumno\Desktop\Interfaces\Practica1\obj\Debug\Practica1.pdb
 C:\Users\alumno\Desktop\Interfaces\Practica1\obj\Debug\Practica1.Vistas.Listados.FrmClientes.resources
+C:\Users\thoma\Source\Repos\thomaswillix\Interfaces\Practica1\obj\Debug\Practica1.Vistas.Listados.FrmClientes.resources

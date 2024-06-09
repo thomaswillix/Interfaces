@@ -1,6 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Practica1",
+    "\\Practica1\\obj",
+    "\\Practica1\\Properties",
+    "\\Practica1\\Vistas"
   ],
+  "SelectedNode": "\\Practica1\\Vistas\\FrmLogin.cs",
   "PreviewInSolutionExplorer": false
 }

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfCliente>
+  <Cliente>
+    <Dni>67378864L</Dni>
+    <Direccion>Avenida de Canarias 3</Direccion>
+    <Ciudad>Madrid</Ciudad>
+    <Representante>
+      <Id>0</Id>
+      <Nombre>Juan</Nombre>
+      <Apellido1>Rodriguez</Apellido1>
+      <Apellido2>Perez</Apellido2>
+      <Puesto>programador</Puesto>
+      <Telefono>0</Telefono>
+      <FechaNac>2002-02-03T13:00:00</FechaNac>
+      <NumSS>0</NumSS>
+    </Representante>
+    <Correo>natalia.sales@gmail.com</Correo>
+    <Cif>C10483436</Cif>
+    <Telefono>658947512</Telefono>
+    <Pais>Zimbawe</Pais>
+    <Descuento>5</Descuento>
+    <Comentarios>Comentarios muy comentados</Comentarios>
+    <Cita>2024-06-09T20:51:38.7734901+02:00</Cita>
+    <TipoCli>Pequeño</TipoCli>
+    <Nombre>Natalia Sales</Nombre>
+  </Cliente>
+  <Cliente>
+    <Dni>54875412A</Dni>
+    <Direccion>Avenida de Portugal 2</Direccion>
+    <Ciudad>Madrid</Ciudad>
+    <Representante>
+      <Id>0</Id>
+      <Nombre>Juan</Nombre>
+      <Apellido1>Rodriguez</Apellido1>
+      <Apellido2>Perez</Apellido2>
+      <Puesto>programador</Puesto>
+      <Telefono>0</Telefono>
+      <FechaNac>2002-02-03T13:00:00</FechaNac>
+      <NumSS>0</NumSS>
+    </Representante>
+    <Correo>pepe.lopez@gmail.com</Correo>
+    <Cif>C10326365</Cif>
+    <Telefono>655458215</Telefono>
+    <Pais>Marruecos</Pais>
+    <Descuento>2</Descuento>
+    <Comentarios>Comentarios poco comentados</Comentarios>
+    <Cita>2024-06-09T20:51:38.7734901+02:00</Cita>
+    <TipoCli>Muy grande</TipoCli>
+    <Nombre>Pepe Lopez</Nombre>
+  </Cliente>
+  <Cliente>
+    <Dni>45975612D</Dni>
+    <Direccion>Calle de Barcelona 35</Direccion>
+    <Ciudad>Fuanlabrada</Ciudad>
+    <Representante>
+      <Id>0</Id>
+      <Nombre>Juan</Nombre>
+      <Apellido1>Rodriguez</Apellido1>
+      <Apellido2>Perez</Apellido2>
+      <Puesto>programador</Puesto>
+      <Telefono>0</Telefono>
+      <FechaNac>2002-02-03T13:00:00</FechaNac>
+      <NumSS>0</NumSS>
+    </Representante>
+    <Correo>juana@gmail.com</Correo>
+    <Cif>C16547521</Cif>
+    <Telefono>645875695</Telefono>
+    <Pais>Portugal</Pais>
+    <Descuento>5</Descuento>
+    <Comentarios>Comentarios comentados</Comentarios>
+    <Cita>2024-06-09T20:51:38.7734901+02:00</Cita>
+    <TipoCli>Grande</TipoCli>
+    <Nombre>Juana Magán</Nombre>
+  </Cliente>
+  <Cliente>
+    <Dni>987654123V</Dni>
+    <Direccion>Calle de Tokyo 4</Direccion>
+    <Ciudad>Coslada</Ciudad>
+    <Representante>
+      <Id>0</Id>
+      <Nombre>Juan</Nombre>
+      <Apellido1>Rodriguez</Apellido1>
+      <Apellido2>Perez</Apellido2>
+      <Puesto>programador</Puesto>
+      <Telefono>0</Telefono>
+      <FechaNac>2002-02-03T13:00:00</FechaNac>
+      <NumSS>0</NumSS>
+    </Representante>
+    <Correo>nose.nose@gmail.com</Correo>
+    <Cif>H54876521</Cif>
+    <Telefono>654487694</Telefono>
+    <Pais>Nose</Pais>
+    <Descuento>5</Descuento>
+    <Comentarios>Comentarios</Comentarios>
+    <Cita>2024-06-09T20:51:38.7734901+02:00</Cita>
+    <TipoCli>Pequeño</TipoCli>
+    <Nombre>No Se</Nombre>
+  </Cliente>
+</ArrayOfCliente>

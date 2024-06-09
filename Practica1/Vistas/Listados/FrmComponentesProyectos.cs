@@ -1,14 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using Practica1.Manejadores;
+﻿using Practica1.Manejadores;
 using Practica1.Modelo;
+using System;
+using System.Windows.Forms;
 
 namespace Practica1.Vistas
 {
@@ -67,37 +60,57 @@ namespace Practica1.Vistas
                 {
                     int posicion = ControladorEmpleadosJSON.listaEmpleados.FindIndex(x => x.Id.ToString() + " " + x.Nombre + " " + x.Apellido1 + " " + x.Puesto == cd.Text);
                     ControladorProyectosBin.listaProyectos.RemoveAt(posicion);
+                    listBox2.Items.Remove(cd);
+                    MessageBox.Show("Proyecto eliminado");
+
                 }
             }
-            this.listBox1.Controls.Clear();
-            mostrarEmpleados();
         }
 
         private void populateCombo()
         {
             comboBox1.Items.Clear();
-
+            comboBox1.DisplayMember = "Text";
+            comboBox1.ValueMember = "Value";
             foreach (Proyecto p in ControladorProyectosBin.listaProyectos)
             {
-                comboBox1.Items.Add(p.ToString());
+                comboBox1.Items.Add(new { Text = p.Descripcion, Value = p.Codigo });
             }
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (ControladorComponentesProyecto.listaComponentes.Contains(
-                new ComponentesProyecto {CodigoProyecto = comboBox1.SelectedIndex.ToString()})) 
+            listBox2.Controls.Clear();
+            foreach (ComponentesProyecto cp in ControladorComponentesProyecto.listaComponentes)
             {
-                populateListView();
-            } 
-        }
+                if (cp.CodigoP == Convert.ToInt32(comboBox1.SelectedValue))
+                {
+                    populateListView();
+                }
+            }
 
+        }
+        private void crearLabel(string s, int n)
+        {
+            System.Windows.Forms.Label cb = new System.Windows.Forms.Label();
+
+            cb.AutoSize = true;
+            cb.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F,
+            System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point,
+            ((byte)(0)));
+            cb.Location = new System.Drawing.Point(20, 15 + n);
+            cb.Size = new System.Drawing.Size(291, 20);
+            cb.TabIndex = 1;
+            cb.Text = s;
+            listBox2.Controls.Add(cb);
+        }
         private void populateListView()
         {
             foreach (ComponentesProyecto cp in ControladorComponentesProyecto.listaComponentes)
             {
-                listBox2.Text = cp.IdEmpleado.ToString() + " " + cp.Puesto + 
-                    " " + cp.PorcentajeDedicacion +"\n";
+                crearLabel(cp.DescripcionP, 10);
+                crearLabel(Convert.ToString(cp.IdEmpleado), 40);
+                crearLabel(cp.Puesto, 70);
             }
         }
 
