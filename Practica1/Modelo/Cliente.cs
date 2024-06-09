@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Practica1.Modelo
 {
@@ -24,10 +20,10 @@ namespace Practica1.Modelo
         private Image logo;
         private DateTime cita;
         private string tipoCli;
-        
 
-        public Cliente(string dni,string nombre, string direccion, string ciudad, Empleado representante, 
-            string correo, string cif, string telefono, string pais, string tipoCli, decimal descuento, string comentarios, 
+
+        public Cliente(string dni, string nombre, string direccion, string ciudad, Empleado representante,
+            string correo, string cif, string telefono, string pais, string tipoCli, decimal descuento, string comentarios,
             Image logo, DateTime cita)
         {
             this.Dni = dni;
@@ -44,6 +40,16 @@ namespace Practica1.Modelo
             this.Logo = logo;
             this.Cita = cita;
             this.TipoCli = tipoCli;
+        }
+        public Cliente(string nombre, string nombreCompany, string tlf)
+        {
+            this.Nombre = nombreCompany;
+            this.telefono = tlf;
+            this.dni = nombre;
+        }
+        public Cliente(string nombreCompany)
+        {
+            this.Nombre = nombreCompany;
         }
 
         public Cliente() { }
@@ -72,5 +78,5 @@ namespace Practica1.Modelo
                    $"Descuento: {descuento}, Próxima Cita: {Cita}";
         }
     }
-    
+
 }

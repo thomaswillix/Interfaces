@@ -1,7 +1,7 @@
-﻿using System;
-using System.Windows.Forms;
-using Practica1.Manejadores;
+﻿using Practica1.Manejadores;
 using Practica1.Vistas;
+using System;
+using System.Windows.Forms;
 
 namespace Practica1
 {
@@ -25,9 +25,8 @@ namespace Practica1
             MessageBox.Show("Has pulsado Aceptar");
             string usuario = cuadroUsu.Text.ToLower();
             string contrasena = cuadroCont.Text.ToLower();
-            if (validaLogin(ref usuario, ref contrasena) == true)
+            if (validaLogin(ref usuario, ref contrasena))
             {
-                //ControladorUsuariosXML.buscarUsuario(usuario, contrasena);
                 cuadroUsu.Clear();
                 cuadroCont.Clear();
                 this.Hide();
@@ -64,11 +63,11 @@ namespace Practica1
 
         private void GestionaIES_Load(object sender, System.EventArgs e)
         {
+            ControladorEmpleadosJSON.cargarEmpleados();
             ControladorClientesXML.crearClientes();
             ControladorClientesXML.escribirClientesXML();
             ControladorClientesXML.cargarClientesXML();
             ControladorComponentesProyecto.crearComponentes();
-            ControladorEmpleadosJSON.cargarEmpleados();
             ControladorProyectosBin.cargarProyectos();
             ControladorUsuariosXML.cargarUsuariosXML();
         }

@@ -56,10 +56,10 @@ namespace Practica1.Modelo
                 }
             }
         }
-        public DataTable ObtenerProyectos()
+        public static DataTable Obtener()
         {
             // Query para obtener los proyectos
-            string query = "SELECT * FROM Proyectos";
+            string query = "SELECT * FROM Customers";
 
             // Crear una tabla para almacenar los resultados
             DataTable dataTable = new DataTable();
@@ -79,9 +79,67 @@ namespace Practica1.Modelo
             }
 
             return dataTable;
-
         }
-        public void CargarDatosEspecificosDataGridView(DataGridView dataGridView)
+
+        public static Cliente ObtenerCustomer(int id)
+        {
+            Cliente c = new Cliente("SIN INFORMACION");
+            // Query para obtener los datos específicos
+            string query = "SELECT * FROM Customers where CustomerId = @id";
+
+            // Crear la conexión
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+                try
+                {
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@id", id);
+                        using (SqlDataReader reader = command.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                c = new Cliente(Convert.ToString(reader["ContactName"]),
+                                    Convert.ToString(reader["CompanyName"]), Convert.ToString(reader["Phone"]));
+                            }
+                        }
+                        return c;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error al cargar datos: {ex.Message}\n{ex.StackTrace}");
+                    connection.Close();
+                }
+            }
+            return c;
+        }
+
+        public static DataTable ObtenerProyectos()
+        {
+            // Query para obtener los proyectos
+            string query = "SELECT * FROM Proyectos";
+            // Crear una tabla para almacenar los resultados
+            DataTable dataTable = new DataTable();
+
+            // Crear la conexión
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                // Abrir la conexión
+                connection.Open();
+                // Crear un adaptador de datos
+                using (SqlDataAdapter adapter = new SqlDataAdapter(query, connection))
+                {
+                    // Llenar la tabla con los resultados de la consulta
+                    adapter.Fill(dataTable);
+                }
+                connection.Close();
+            }
+            return dataTable;
+        }
+
+        public static void CargarDatosEspecificosDataGridView(DataGridView dataGridView)
         {
             // Query para obtener los datos específicos
             string query = "SELECT Id, estado FROM Proyectos";
@@ -90,15 +148,12 @@ namespace Practica1.Modelo
             dataGridView.Columns.Add("Id", "Id");
             dataGridView.Columns.Add("Estado", "Estado");
 
-
             // Crear la conexión
-
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 connection.Open();
                 try
                 {
-
                     using (SqlCommand command = new SqlCommand(query, connection))
                     {
                         using (SqlDataReader reader = command.ExecuteReader())
@@ -117,8 +172,8 @@ namespace Practica1.Modelo
                     connection.Close();
                 }
             }
-
         }
+
         public static void borrarProyecto(int cod)
         {
             string query = "DELETE FROM Proyectos where Id = @cod";
@@ -147,6 +202,7 @@ namespace Practica1.Modelo
                 }
             }
         }
+
         public static void modificarProyecto(int id, string descripcion, string fechaInicio, string fechaFin, string estado, double presupuestoInicial, double presupuestoFinal, string cambios, string codigoCliente)
         {
             // Query de inserción
